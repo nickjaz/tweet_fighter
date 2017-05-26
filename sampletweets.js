@@ -239,7 +239,7 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       }
     ]
   },
@@ -248,7 +248,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Feb 20 14:32:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 },
@@ -258,7 +258,7 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       }
     ]
   },
@@ -267,7 +267,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Feb 20 14:50:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 },
@@ -277,7 +277,7 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       }
     ]
   },
@@ -286,7 +286,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Feb 20 14:29:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 },
@@ -296,7 +296,7 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       }
     ]
   },
@@ -305,7 +305,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Feb 20 13:38:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 },
@@ -315,10 +315,10 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       },
       {
-        "screen_name": "@roddywhiteTV",
+        "screen_name": "RoddywhiteTV",
       }
     ]
   },
@@ -327,7 +327,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Apr 03 13:42:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 },
@@ -337,7 +337,7 @@ var tweets = JSON.stringify([
   "entities": {
     "user_mentions": [
       {
-        "screen_name": "@rsherman_25",
+        "screen_name": "RSherman_25",
       }
     ]
   },
@@ -346,7 +346,7 @@ var tweets = JSON.stringify([
   "created_at": "Sat Apr 03 13:42:00 +0000 2013",
   "user": {
     "follower_count": 463110,
-    "screen_name": "@Revis24",
+    "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
 }]
