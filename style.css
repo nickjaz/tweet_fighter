@@ -1,0 +1,28 @@
+
+* {
+  font-family: 'helvetica';
+}
+
+body {
+  width: 960px;
+  height: 1024px;
+  background: linear-gradient(to bottom right, #FF3F09, #E25E0D);
+  font-family: 'helvetica';
+}
+
+header {
+  height: 120px;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.spacer {
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
