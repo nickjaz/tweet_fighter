@@ -1,6 +1,6 @@
 'use strict';
 //search 'from:@RSherman_25 @Revis24'
-var tweets = [
+var tweets = JSON.stringify([
   {
   "text": "@Revis24 one season u will get 8 picks.... But it won't happen anytime soon... I did it in my 2nd season... So u have something to chase",
   "entities": {
@@ -349,4 +349,5 @@ var tweets = [
     "screen_name": "@Revis24",
     "time_zone": "Pacific",
   },
-}];
+}]
+);

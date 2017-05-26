@@ -11,3 +11,6 @@ function submitSearch(event){
 }
 
 formElement.addEventListener('submit', submitSearch);
+
+var returnedTweets = JSON.parse(tweets);
+console.log(returnedTweets);
