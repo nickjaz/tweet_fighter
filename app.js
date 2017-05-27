@@ -53,6 +53,12 @@ Twit.prototype.convertDates = function(){
   }
 };
 
+Twit.prototype.sortDates = function(){
+  this.tweets.sort(function(a,b){
+    return new Date(a.datetimesent) - new Date(b.datetimesent);
+  });
+};
+
 function Twit(screen_name){
   this.screen_name = screen_name.toUpperCase();
   this.tweets = [];
