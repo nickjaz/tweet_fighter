@@ -5,6 +5,7 @@ var twitOne = '';
 var twitTwo = '';
 var twitOneObj;
 var twitTwoObj;
+var returnedTweets = JSON.parse(tweets);
 
 function submitSearch(event){
   event.preventDefault();
@@ -14,19 +15,18 @@ function submitSearch(event){
   twitTwo = event.target.twitTwo.value;
   twitTwo = twitTwo.replace('@','');
   assignTwits(twitOne, twitTwo);
-  formElement.reset();
+  sortTweets(returnedTweets, twitOne, twitTwo); formElement.reset();
 }
 
 formElement.addEventListener('submit', submitSearch);
 
-var returnedTweets = JSON.parse(tweets);
 
 function Twit(screen_name){
   this.screen_name = screen_name;
   this.tweets = [];
 }
 
-Twit.prototype.sortTweets = function(returnedTweets, twitOne, twitTwo){
+function sortTweets(returnedTweets, twitOne, twitTwo){
   for (var i=0; i<returnedTweets.length; i++){
     if (returnedTweets[i].user.screen_name === twitOne){
       twitOneObj.tweets.push(returnedTweets[i]);
@@ -36,7 +36,7 @@ Twit.prototype.sortTweets = function(returnedTweets, twitOne, twitTwo){
       console.log('Error!!!!!!');
     }
   }
-};
+}
 
 function assignTwits(twitOne, twitTwo){
   twitOneObj = new Twit(twitOne);
