@@ -70,9 +70,24 @@ function findWinner(){
   } else if (twitOneObj.warScore < twitTwoObj.warScore){
     fightResults = [twitTwoObj.screen_name, twitTwoObj.warScore, twitOneObj.screen_name, twitOneObj.warScore];
   } else {
-    console.log('Error');
+    console.log('findWinner Error');
   }
   return fightResults;
+}
+
+function renderResults(){
+  var resultsArray = findWinner();
+  var twitOneBox = document.getElementById('twit-one');
+  var twitTwoBox = document.getElementById('twit-two');
+  if (resultsArray[0] === twitOneObj.screen_name){
+    twitOneBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
+    twitTwoBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
+  } else if (resultsArray[0] === twitTwoObj.screen_name){
+    twitOneBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
+    twitTwoBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
+  } else {
+    console.log('renderResults Error');
+  }
 }
 
 function results(){
@@ -80,6 +95,5 @@ function results(){
   twitOneObj.calcWarScore();
   twitTwoObj.calcTweetScores();
   twitTwoObj.calcWarScore();
-  findWinner();
-  return findWinner();
+  renderResults();
 }
