@@ -18,6 +18,7 @@ function submitSearch(event){
   twitTwo = twitTwo.replace('@','');
   assignTwits(twitOne, twitTwo);
   sortTweets(returnedTweets, twitOne, twitTwo);
+  results();
   formElement.reset();
 }
 
