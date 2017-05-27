@@ -71,7 +71,7 @@ function sortTweets(returnedTweets, twitOne, twitTwo){
     } else if (returnedTweets[i].user.screen_name.toUpperCase() === twitTwo){
       twitTwoObj.tweets.push(returnedTweets[i]);
     } else {
-      console.log('Error!!!!!!');
+      console.log('Not assigned');
     }
   }
 }
@@ -79,6 +79,13 @@ function sortTweets(returnedTweets, twitOne, twitTwo){
 function assignTwits(twitOne, twitTwo){
   twitOneObj = new Twit(twitOne);
   twitTwoObj = new Twit(twitTwo);
+}
+
+function activeTweets(){
+  var activeTweets = [];
+  activeTweets = twitOneObj.tweets.concat(twitTwoObj.tweets);
+  console.log(activeTweets);
+  return activeTweets;
 }
 
 function findWinner(){
