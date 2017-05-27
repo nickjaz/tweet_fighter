@@ -3,6 +3,8 @@
 var formElement = document.getElementById('form');
 var twitOne = '';
 var twitTwo = '';
+var twitOneObj;
+var twitTwoObj;
 
 function submitSearch(event){
   event.preventDefault();
@@ -11,6 +13,7 @@ function submitSearch(event){
   twitOne = twitOne.replace('@','');
   twitTwo = event.target.twitTwo.value;
   twitTwo = twitTwo.replace('@','');
+  assignTwits(twitOne, twitTwo);
   formElement.reset();
 }
 
@@ -35,5 +38,7 @@ Twit.prototype.sortTweets = function(returnedTweets, twitOne, twitTwo){
   }
 };
 
-var twitOneObj = new Twit('RSherman_25');
-var twitTwoObj = new Twit('Revis24');
+function assignTwits(twitOne, twitTwo){
+  twitOneObj = new Twit(twitOne);
+  twitTwoObj = new Twit(twitTwo);
+}
