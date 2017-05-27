@@ -42,6 +42,17 @@ Twit.prototype.calcWarScore = function(){
   this.warScore = Math.floor(totWarScore / this.tweets.length);
 };
 
+Twit.prototype.convertDates = function(){
+  for (var i=0; i<this.tweets.length; i++){
+    var twitDate = this.tweets[i].created_at;
+    var twitDateSplit = twitDate.split(' ');
+    var jsDate = twitDateSplit[0] + ' ' + twitDateSplit[1] + ' ' + twitDateSplit[2] + ' ' + twitDateSplit[5] + ' ' + twitDateSplit[3] + ' GMT' + twitDateSplit[4];
+    console.log(jsDate);
+    this.tweets[i].datetimesent = new Date(jsDate);
+    console.log(this.tweets[i].datetimesent);
+  }
+};
+
 function Twit(screen_name){
   this.screen_name = screen_name.toUpperCase();
   this.tweets = [];
