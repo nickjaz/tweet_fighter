@@ -6,6 +6,8 @@ var twitTwo = '';
 var twitOneObj;
 var twitTwoObj;
 var returnedTweets = JSON.parse(tweets);
+var favouritePoints = 1;
+var reTweetPoints = 1.5;
 
 function submitSearch(event){
   event.preventDefault();
@@ -15,11 +17,21 @@ function submitSearch(event){
   twitTwo = event.target.twitTwo.value;
   twitTwo = twitTwo.replace('@','');
   assignTwits(twitOne, twitTwo);
-  sortTweets(returnedTweets, twitOne, twitTwo); formElement.reset();
+  sortTweets(returnedTweets, twitOne, twitTwo);
+  formElement.reset();
 }
 
 formElement.addEventListener('submit', submitSearch);
 
+Twit.prototype.calcTweetScores = function(){
+  for (var i=0; i<this.tweets.length; i++){
+    var totTweetFavScore = favouritePoints * this.tweets[i].favourites_count;
+    var totTweetRTScore = reTweetPoints * this.tweets[i].retweet_count;
+    this.tweets[i].faveScore = totTweetFavScore;
+    this.tweets[i].rTScore = totTweetRTScore;
+    this.tweets[i].tweetWarScore = totTweetRTScore + totTweetFavScore;
+  }
+};
 
 function Twit(screen_name){
   this.screen_name = screen_name;
