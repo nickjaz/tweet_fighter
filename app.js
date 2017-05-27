@@ -53,6 +53,13 @@ Twit.prototype.convertDates = function(){
   }
 };
 
+Twit.prototype.setTimestamp = function(){
+  for (var i=0; i<this.tweets.length; i++){
+    var twitDate = this.tweets[i].datetimesent;
+    this.tweets[i].timestamp = twitDate.getTime();
+  }
+};
+
 Twit.prototype.sortDates = function(){
   this.tweets.sort(function(a,b){
     return new Date(a.datetimesent) - new Date(b.datetimesent);
