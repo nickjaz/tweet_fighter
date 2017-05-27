@@ -62,3 +62,24 @@ function assignTwits(twitOne, twitTwo){
   twitOneObj = new Twit(twitOne);
   twitTwoObj = new Twit(twitTwo);
 }
+
+function findWinner(){
+  var fightResults = [];
+  if (twitOneObj.warScore > twitTwoObj.warScore){
+    fightResults = [twitOneObj.screen_name, twitOneObj.warScore, twitTwoObj.screen_name, twitTwoObj.warScore];
+  } else if (twitOneObj.warScore < twitTwoObj.warScore){
+    fightResults = [twitTwoObj.screen_name, twitTwoObj.warScore, twitOneObj.screen_name, twitOneObj.warScore];
+  } else {
+    console.log('Error');
+  }
+  return fightResults;
+}
+
+function results(){
+  twitOneObj.calcTweetScores();
+  twitOneObj.calcWarScore();
+  twitTwoObj.calcTweetScores();
+  twitTwoObj.calcWarScore();
+  findWinner();
+  return findWinner();
+}
