@@ -12,9 +12,9 @@ var reTweetPoints = 1.5;
 function submitSearch(event){
   event.preventDefault();
 
-  twitOne = event.target.twitOne.value;
+  twitOne = event.target.twitOne.value.toUpperCase();
   twitOne = twitOne.replace('@','');
-  twitTwo = event.target.twitTwo.value;
+  twitTwo = event.target.twitTwo.value.toUpperCase();
   twitTwo = twitTwo.replace('@','');
   assignTwits(twitOne, twitTwo);
   sortTweets(returnedTweets, twitOne, twitTwo);
@@ -33,16 +33,24 @@ Twit.prototype.calcTweetScores = function(){
   }
 };
 
+Twit.prototype.calcWarScore = function(){
+  var totWarScore = 0;
+  for (var i=0; i<this.tweets.length; i++){
+    totWarScore = totWarScore + this.tweets[i].tweetWarScore;
+  }
+  this.warScore = Math.floor(totWarScore / this.tweets.length);
+};
+
 function Twit(screen_name){
-  this.screen_name = screen_name;
+  this.screen_name = screen_name.toUpperCase();
   this.tweets = [];
 }
 
 function sortTweets(returnedTweets, twitOne, twitTwo){
   for (var i=0; i<returnedTweets.length; i++){
-    if (returnedTweets[i].user.screen_name === twitOne){
+    if (returnedTweets[i].user.screen_name.toUpperCase() === twitOne){
       twitOneObj.tweets.push(returnedTweets[i]);
-    } else if (returnedTweets[i].user.screen_name === twitTwo){
+    } else if (returnedTweets[i].user.screen_name.toUpperCase() === twitTwo){
       twitTwoObj.tweets.push(returnedTweets[i]);
     } else {
       console.log('Error!!!!!!');
