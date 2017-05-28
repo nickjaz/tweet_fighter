@@ -93,16 +93,42 @@ function setActiveTweets(){
   activeTweets = twitOneObj.tweets.concat(twitTwoObj.tweets);
 }
 
+function sortActiveTweets(){
+  activeTweets.sort(function(a,b){
+    return new Date(a.datetimesent) - new Date(b.datetimesent);
+  });
+}
+
 function calData(){
   var calData = [];
   for (var i=0; i<activeTweets.length; i++){
     var calTimestamp = Math.floor(activeTweets[i].timestamp / 1000);
-    var calDataEl = '"' + calTimestamp + '": ' + Math.random();
+    var calDataEl = '"' + calTimestamp + '": ' + Math.floor(Math.random() * 20);
     calData.push(calDataEl);
   }
   var calReturnData = calData.join();
   calReturnData = '{' + calReturnData + '}';
   return calReturnData;
+}
+
+function makeHeatMap(){
+  var data = calData();
+  var cal = new CalHeatMap();
+  cal.init({
+    itemSelector: '#calendar',
+    domain: 'year',
+    subdomain: 'month',
+    subDomainTextFormat: '%m',
+    cellSize: 20,
+    start: activeTweets[0].datetimesent,
+    range: 4,
+    legend: [1, 2, 5, 8, 10],
+    label: {
+      position: 'top'
+    },
+    data: data,
+  });
+  console.log(cal.init.data);
 }
 
 function findWinner(){
@@ -142,4 +168,7 @@ function results(){
   twitOneObj.setTimestamp();
   twitTwoObj.setTimestamp();
   renderResults();
+  setActiveTweets();
+  sortActiveTweets();
+  makeHeatMap();
 }
