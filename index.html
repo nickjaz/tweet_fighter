@@ -19,17 +19,22 @@
 
     <main>
       <section id="display">
-        <input id="twitOne" type="text" placeholder="select your tweet fighter">
+        <form id="form">
+          <fieldset>
+            <input id="twitOne" type="text" name="twitOne" placeholder="select tweet fighter">
+          </fieldset>
 
-        <input id="twitTwo" type="text" placeholder="select your tweet fighter">
+          <fieldset>
+            <input id="twitTwo" type="text" name="twitTwo" placeholder="select tweet fighter">
+          </fieldset>
 
-        <button id="toggler" type="submit">START A WAR!</button>
+          <button id="toggler" type="submit">PICK A FIGHT!</button>
+        </form>
       </section>
     </main>
 
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="uft-8"></script>
-  <script src="./cal-heatmap-master/cal-heatmap.min.js"></script>
-  <script src="sampletweets.js"></script>
-  <script src="app.js"></script>
+  <script src="render.js"></script>
+  <!-- <script src="sampletweets.js"></script>
+  <script src="app.js"></script> -->
 </html>

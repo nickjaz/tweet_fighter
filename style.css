@@ -69,12 +69,8 @@ input {
   border-radius: 2px;
 }
 
-#searchA {
-  float: left;
-}
-
-#searchB {
-  float: right;
+fieldset {
+  display: inline-block;
 }
 
 #toggler {

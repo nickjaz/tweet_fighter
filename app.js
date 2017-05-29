@@ -1,5 +1,6 @@
 'use strict';
 
+//global variables
 var formElement = document.getElementById('form');
 var twitOne = '';
 var twitTwo = '';
@@ -10,6 +11,7 @@ var favouritePoints = 1;
 var reTweetPoints = 1.5;
 var activeTweets = [];
 
+//user click
 function submitSearch(event){
   event.preventDefault();
 
@@ -170,5 +172,5 @@ function results(){
   renderResults();
   setActiveTweets();
   sortActiveTweets();
-  makeHeatMap();
+  // makeHeatMap();
 }
