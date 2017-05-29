@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>tweet fighter</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./cal-heatmap-master/cal-heatmap.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,15 +18,18 @@
     </header>
 
     <main>
-      <section class="display">
-        <input id="search" type="search" placeholder="select your fighter">
+      <section id="display">
+        <input id="twitOne" type="text" placeholder="select your tweet fighter">
 
-        <input id="search" type="search" placeholder="select your fighter">
+        <input id="twitTwo" type="text" placeholder="select your tweet fighter">
 
-        <button class="btn" type="button">START A WAR!</button>
+        <button id="toggler" type="submit">START A WAR!</button>
       </section>
     </main>
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="uft-8"></script>
+  <script src="./cal-heatmap-master/cal-heatmap.min.js"></script>
+  <script src="sampletweets.js"></script>
   <script src="app.js"></script>
 </html>
