@@ -785,7 +785,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -804,7 +804,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -823,7 +823,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -842,7 +842,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -861,7 +861,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -880,7 +880,7 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
@@ -899,8 +899,10 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
+    "screen_name": "Realrclark25",
+  }
   ]
 },
 "retweet_count": 823,
@@ -918,19 +920,78 @@ var tweets = JSON.stringify([
 "entities": {
   "user_mentions": [
     {
-      "screen_name": "@DeAngeloHall23",
+      "screen_name": "DeAngeloHall23",
     }
   ]
 },
 "retweet_count": 36,
 "favourites_count": 78,
-"created_at": "Sat Mar 13 15:54:00 -7000 2014",
+"created_at": "Sat May 7 15:54:00 -7000 2014",
 "user": {
   "follower_count": 1912435,
   "screen_name": "RSherman_25",
   "time_zone": "Pacific",
 },
 },
+
+{
+"text": "@RainRiotHawk @ESPNNFL @DeAngeloHall23 hahaha crazy right... But it's not about facts...just enjoy talking nonsense": {
+  "user_mentions": [
+    {
+      "screen_name": "DeAngeloHall23",
+    }
+    "screen_name": "RainRiotHawk",
+    }
+    "screen_name": "ESPNNFL",
+    }
+  ]
+},
+"retweet_count": 2,
+"favourites_count": 3,
+"created_at": "Sat Mar 15 12:00:00 -7000 2014",
+"user": {
+  "follower_count": 1912435,
+  "screen_name": "RSherman_25",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RSherman_25 let me know when you get 4INTs in one game.": {
+  "user_mentions": [
+    {
+      "screen_name": "DeAngeloHall23",
+    }
+  ]
+},
+"retweet_count": 2,
+"favourites_count": 3,
+"created_at": "Sat Mar 15 12:00:00 -7000 2014",
+"user": {
+  "follower_count": 1912435,
+  "screen_name": "RSherman_25",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RSherman_25 it's easy to say that when you covering Ducks on one side of the field. Ask my old sidekick Nnamdi he out the league already.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+  ]
+},
+"retweet_count": 2,
+"favourites_count": 3,
+"created_at": "Sat Mar 15 12:00:00 -7000 2014",
+"user": {
+  "follower_count": 1912435,
+  "screen_name": "RSherman_25",
+  "time_zone": "Pacific",
+},
+},
+
 
 ]
 );
