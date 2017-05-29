@@ -12,7 +12,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1799,
   "favourites_count": 703,
-  "created_at": "Sat Feb 20 14:07:00 +0000 2013",
+  "created_at": "Sat Feb 20 14:07:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -31,7 +31,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1659,
   "favourites_count": 549,
-  "created_at": "Sat Feb 20 14:06:00 +0000 2013",
+  "created_at": "Sat Feb 20 14:06:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -50,7 +50,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1925,
   "favourites_count": 1128,
-  "created_at": "Sat Feb 20 15:38:00 +0000 2013",
+  "created_at": "Sat Feb 20 15:38:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -69,7 +69,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 387,
   "favourites_count": 655,
-  "created_at": "Sat Feb 03 10:57:00 +0000 2014",
+  "created_at": "Sat Feb 03 10:57:00 -7000 2014",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -97,7 +97,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 0,
   "favourites_count": 0,
-  "created_at": "Sat Feb 03 10:57:00 +0000 2014",
+  "created_at": "Sat Feb 03 10:57:00 -7000 2014",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -119,7 +119,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1,
   "favourites_count": 6,
-  "created_at": "Sat Sep 29 17:05:00 +0000 2013",
+  "created_at": "Sat Sep 29 17:05:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -141,7 +141,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 11,
   "favourites_count": 12,
-  "created_at": "Sat Feb 20 16:19:00 +0000 2013",
+  "created_at": "Sat Feb 20 16:19:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -163,7 +163,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 5,
   "favourites_count": 8,
-  "created_at": "Sat Feb 20 17:05:00 +0000 2013",
+  "created_at": "Sat Feb 20 17:05:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -185,7 +185,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 8,
   "favourites_count": 8,
-  "created_at": "Sat Feb 20 09:57:00 +0000 2013",
+  "created_at": "Sat Feb 20 09:57:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -207,7 +207,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 0,
   "favourites_count": 0,
-  "created_at": "Sat Jan 24 20:06:00 +0000 2013",
+  "created_at": "Sat Jan 24 20:06:00 -7000 2013",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -226,7 +226,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 2,
   "favourites_count": 3,
-  "created_at": "Sat Sep 24 09:11:00 +0000 2012",
+  "created_at": "Sat Sep 24 09:11:00 -7000 2012",
   "user": {
     "follower_count": 1912435,
     "screen_name": "RSherman_25",
@@ -245,7 +245,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1324,
   "favourites_count": 433,
-  "created_at": "Sat Feb 20 14:32:00 +0000 2013",
+  "created_at": "Sat Feb 20 14:32:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
@@ -264,7 +264,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1045,
   "favourites_count": 620,
-  "created_at": "Sat Feb 20 14:50:00 +0000 2013",
+  "created_at": "Sat Feb 20 14:50:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
@@ -283,7 +283,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 709,
   "favourites_count": 271,
-  "created_at": "Sat Feb 20 14:29:00 +0000 2013",
+  "created_at": "Sat Feb 20 14:29:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
@@ -302,7 +302,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 6697,
   "favourites_count": 3216,
-  "created_at": "Sat Feb 20 13:38:00 +0000 2013",
+  "created_at": "Sat Feb 20 13:38:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
@@ -324,7 +324,7 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 1218,
   "favourites_count": 461,
-  "created_at": "Sat Apr 03 13:42:00 +0000 2013",
+  "created_at": "Sat Apr 03 13:42:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
@@ -343,11 +343,55 @@ var tweets = JSON.stringify([
   },
   "retweet_count": 785,
   "favourites_count": 297,
-  "created_at": "Sat Apr 03 13:42:00 +0000 2013",
+  "created_at": "Sat Apr 03 13:42:00 -7000 2013",
   "user": {
     "follower_count": 463110,
     "screen_name": "Revis24",
     "time_zone": "Pacific",
   },
-}]
+},
+
+{
+  "text": "@LG_Blount I just totally lock down one! And pick off passes that come over there.... Rarely ever giving up completions....no need to follow",
+  "entities": {
+    "user_mentions": [
+      {
+        "screen_name": "LG_Blount",
+      }
+    ]
+  },
+  "retweet_count": 303,
+  "favourites_count": 195,
+  "created_at": "Sat Mar 12 18:54:00 -7000 2014",
+  "user": {
+    "follower_count": 1912435,
+    "screen_name": "RSherman_25",
+    "time_zone": "Pacific",
+  },
+},
+
+{
+"text": "@LG_Blount I've seen it .... And done it ....",
+"entities": {
+  "user_mentions": [
+    {
+      "screen_name": "LG_Blount",
+    }
+  ]
+},
+"retweet_count": 316,
+"favourites_count": 339,
+"created_at": "Sat Mar 12 16:54:00 -7000 2014",
+"user": {
+  "follower_count": 1912435,
+  "screen_name": "RSherman_25",
+  "time_zone": "Pacific",
+},
+},
+
+
+
+
+
+]
 );
