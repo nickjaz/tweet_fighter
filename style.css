@@ -49,17 +49,17 @@ main {
 }
 
 section {
-  height: 100px;
+  height: 30px;
   width: 480px;
   padding: 30px;
-  margin: 120px auto;
+  margin: 80px auto;
   border: solid 3px #E2600D;
   border-radius: 2px;
   transition: 350ms;
 }
 
-.war {
-  height: 240px;
+.fight {
+  height: 150px;
 }
 
 input {
@@ -69,17 +69,87 @@ input {
   border-radius: 2px;
 }
 
+form {
+  position: relative;
+}
+
 fieldset {
   display: inline-block;
+}
+
+#twitOne {
+ position: absolute;
+ top: 0;
+ left: 0;
+ transition: 350ms;
+}
+
+#twitTwo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 350ms;
 }
 
 #toggler {
   width: 90px;
   height: 30px;
-  margin-top: 50px;
-  margin-left: 12px;
+  position: absolute;
+  top: 2px;
+  left: 195px;
   border: none;
   border-radius: 2px;
   color: #fff;
   background: #E2600D;
 }
+
+.active {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.show {
+  width: 202px;
+  height: 90px;
+  display: inline-block;
+}
+
+.key_show {
+  width: 56px;
+  height: 90px;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+ul {
+  text-align: center;
+  transition: 350ms;
+  margin-top: 30px;
+}
+
+.winner {
+  font-weight: bold;
+  color: #111;
+  text-shadow: 1px 1px .5px #ddd;
+}
+
+.loser {
+  opacity: .5;
+  color: #ddd;
+}
+
+/*.fade_in {
+  animation: fadein 350ms;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}*/
