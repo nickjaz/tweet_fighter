@@ -1212,6 +1212,7 @@ var tweets = JSON.stringify([
 },
 },
 
+//Start of Sweden//
 {
 "text": "Dear @denmarkdotdk of course, we know beauty we when see it. Except admit that we choose way nicer colors.": {
   "user_mentions": [
@@ -1364,5 +1365,756 @@ var tweets = JSON.stringify([
 },
 },
 
+{
+"text": ". @denmarkdotdk Another thing we don't have in common is that our lakes are the size of your country.": [
+    {
+      "screen_name": "denmarkdotdk",
+  }
+  ]
+},
+"retweet_count": 179,
+"favourites_count": 231,
+"created_at": "Sat Jul 7 1:40:00 -7000 2014",
+"user": {
+  "follower_count": 70133,
+  "screen_name": "swedense",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "Swedes thing wall-to-wall carpets are more disgusting than uncleaned toilets.": [
+    {
+      "screen_name": "denmarkdotdk",
+  }
+  ]
+},
+"retweet_count": 1,
+"favourites_count": 7,
+"created_at": "Sat Jul 7 3:02:00 -7000 2014",
+"user": {
+  "follower_count": 70133,
+  "screen_name": "swedense",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@denmarkdotdk We give you 1 moose and you kill it. How could you ever handle our 400,000 moose. http://wwwc.aftonbladet.se/nyheter/0005/21/alg.html …": [
+    {
+      "screen_name": "denmarkdotdk",
+  }
+  ]
+},
+"retweet_count":319,
+"favourites_count": 483,
+"created_at": "Sat Jul 7 4:01:00 -7000 2014",
+"user": {
+  "follower_count": 70133,
+  "screen_name": "swedense",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@denmarkdotdk We give you 1 moose and you kill it. How could you ever handle our 400,000 moose. http://wwwc.aftonbladet.se/nyheter/0005/21/alg.html …": [
+    {
+      "screen_name": "denmarkdotdk",
+  }
+  ]
+},
+"retweet_count":319,
+"favourites_count": 483,
+"created_at": "Sat Jul 7 4:01:00 -7000 2014",
+"user": {
+  "follower_count": 70133,
+  "screen_name": "swedense",
+  "time_zone": "Pacific",
+},
+},
+
+//Start of TMobile/Sprint tweets//
+{
+"text": "Pro-tip for @marceloclaure, tell people how to pronounce your name now... #leegair!?": [
+    {
+      "screen_name": "marceloclaure",
+  }
+  ]
+},
+"retweet_count": 15,
+"favourites_count": 40,
+"created_at": "Sat Aug 6 10:56:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "1/ @TMobile has surpassed @Sprint – we’re now #1 in prepaid wireless! Sorry @marceloclaure, you're already behind! http://t-mo.co/X2EwWg": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "Sprint",
+    }
+  ]
+},
+"retweet_count": 87,
+"favourites_count": 118,
+"created_at": "Sat Aug 6 16:38:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@XPCLLC @TMobile @sprint @marceloclaure and you follow me why?": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "TMobile",
+    },
+    "screen_name": "XPCLLC",
+    }
+  ]
+},
+"retweet_count": 2,
+"favourites_count": 10,
+"created_at": "Sat Aug 15 17:57:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@bigehays @michello67 @jessdee71 @marceloclaure why don't you come over? You have fight. I like that. Wanna join #Magenta?": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "bigehays",
+    },
+    "screen_name": "michelleo67",
+    },
+    "screen_name": "jessdee71",
+    }
+  ]
+},
+"retweet_count": 1,
+"favourites_count": 4,
+"created_at": "Sat Aug 17 18:05:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure @sprint Nexttime I rally team,i'll READ notecards,Confidence in leader #NOT ,StiffScared #Boring #yawn": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "sprint",
+    },
+  ]
+},
+"retweet_count": 7,
+"favourites_count": 10,
+"created_at": "Sat Aug 19 18:03:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@krisspragg @marceloclaure @sprint was a great speech from the heart and worked very well": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "sprint",
+    },
+    "screen_name": "krisspragg",
+    }
+  ]
+},
+"retweet_count": 2,
+"favourites_count": 1,
+"created_at": "Sat Aug 19 18:20:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@mikefranze4 @marceloclaure @sprint zero comment, no retweets, no interest #frorible": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "sprint",
+    },
+    "screen_name": "mikefranze4",
+    }
+  ]
+},
+"retweet_count": 1,
+"favourites_count": 4,
+"created_at": "Sat Sep 29 21:41:00 -7000 2014",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RogerWCheng @marceloclaure good try Roger... It's about customers not CEOs.. And besides the text might not be received on @sprint network": [
+    {
+      "screen_name": "marceloclaure",
+    },
+      "screen_name": "RogerWCheng",
+    },
+    "screen_name": "sprint",
+    }
+  ]
+},
+"retweet_count": 5,
+"favourites_count": 14,
+"created_at": "Sat Jan 23 10:29:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure @sprint Oh look! You learned how to use the “respond” button. I thought you only knew how to use the retweet button.": [
+    {
+      "screen_name": "marceloclaure",
+    },
+    "screen_name": "sprint",
+    }
+  ]
+},
+"retweet_count": 31,
+"favourites_count": 78,
+"created_at": "Sat Feb 1 19:23:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure @sprint Yes – maybe you should keep this in mind when you RT people talking about @KimKardashian.": [
+    {
+      "screen_name": "marceloclaure",
+    },
+    "screen_name": "sprint",
+    },
+    "screen_name": "KimKardashian",
+    }
+  ]
+},
+"retweet_count": 13,
+"favourites_count": 40,
+"created_at": "Sat Feb 1 19:40:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RogerWCheng @marceloclaure you mean me and his staff...": [
+    {
+      "screen_name": "marceloclaure",
+    },
+    "screen_name": "RogerWCheng",
+    }
+  ]
+},
+"retweet_count": 10,
+"favourites_count": 30,
+"created_at": "Sat Feb 1 19:54:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@RogerWCheng @marceloclaure Do any of you really think @marceloclaure claure touches his twitter ? Do the 99% retweets really fool you?": [
+    {
+      "screen_name": "marceloclaure",
+    },
+    "screen_name": "RogerWCheng",
+    }
+  ]
+},
+"retweet_count": 22,
+"favourites_count": 54,
+"created_at": "Sat Feb 1 20:19:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure @RogerWCheng wow that 3 day delayed reply makes twitter so useful...what's next happy new year?": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "RogerWCheng",
+    }
+  ]
+},
+"retweet_count": 22,
+"favourites_count": 54,
+"created_at": "Sat Feb 4 20:48:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@RogerWCheng @brettschulte @marceloclaure thanks for being so fair Ro": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "RogerWCheng",
+    }
+    "screen_name": "brettschulte",
+    }
+  ]
+},
+"retweet_count": 3,
+"favourites_count": 13,
+"created_at": "Sat Feb 5 16:55:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@BagirovEmmanuel @marceloclaure doesn't seem like a rude awakening.Our 4G and your 3G did as expected. I have an announcement for you.Wait!": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "BagirovEmmanuel",
+    }
+  ]
+},
+"retweet_count": 14,
+"favourites_count": 37,
+"created_at": "Sat Feb 9 23:33:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "Did @masason say there was going to be a “rude awakening” and @marceloclaure assumed it was us? #swingandamiss http://on.wsj.com/1A9nzeD ": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "masason",
+    }
+  ]
+},
+"retweet_count": 10,
+"favourites_count": 29,
+"created_at": "Sat Feb 10 10:12:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure I react fast and constant. It's what i do.yes ,fix your network. We all need to. Can you congratulate me for being number 3?": [
+    {
+      "screen_name": "marceloclaure",
+    }
+  ]
+},
+"retweet_count": 17,
+"favourites_count": 21,
+"created_at": "Sat Feb 10 21:05:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@marceloclaure Your unlimited plan = $60. Your unlimited plan for iPhone = $50. Your unlimited plan for "free" #GS6 = $80. That's simple?!": [
+    {
+      "screen_name": "marceloclaure",
+    }
+  ]
+},
+"retweet_count": 36,
+"favourites_count": 106,
+"created_at": "Sat Mar 26 20:47:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@marceloclaure @EssentialDacome and really really slow if you can get coverage :)": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "EssentialDacome",
+    }
+  ]
+},
+"retweet_count": 9,
+"favourites_count": 49,
+"created_at": "Sat Mar 26 20:52:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@marceloclaure #trickery you made my point thank you.. You didn't mention lease vs buy and one ends with no ownership #fineprintlies #bs": [
+    {
+      "screen_name": "marceloclaure",
+    }
+  ]
+},
+"retweet_count": 10,
+"favourites_count": 38,
+"created_at": "Sat Mar 26 21:18:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": ".@marceloclaure and I repeat it is omg horribly slow and spotty and unusable network #leaselies #SloworNoNetwork #sorrynotsorry": [
+    {
+      "screen_name": "marceloclaure",
+    }
+  ]
+},
+"retweet_count": 21,
+"favourites_count": 76,
+"created_at": "Sat Mar 26 21:20:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "Half-assed commercial, half-assed data speeds. #typical @sprint. #SprintLikeHell": [
+    {
+      "screen_name": "marceloclaure",
+    }
+    "screen_name": "sprint",
+    }
+  ]
+},
+"retweet_count": 242,
+"favourites_count": 386,
+"created_at": "Sat Feb 1 18:17:00 -7000 2015",
+"user": {
+  "follower_count": 4194117,
+  "screen_name": "JohnLegere",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere @sprint Never sacrifice your class to get even with someone who has none.": [
+    {
+      "screen_name": "JohnLegere",
+    },
+    "screen_name": "sprint",
+    }
+  ]
+},
+"retweet_count": 169,
+"favourites_count": 228,
+"created_at": "Sat Feb 1 18:32:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@jalopeo @sprintcare @JohnLegere @sprint hi Jalopeo I wouldn't worry he does that to anyone  that writes something he doesn't like.": [
+    {
+      "screen_name": "JohnLegere",
+    },
+    "screen_name": "sprintcare",
+    },
+    "screen_name": "sprint",
+    },
+    "screen_name": "jalopeo",
+    }
+  ]
+},
+"retweet_count": 3,
+"favourites_count": 2,
+"created_at": "Sat Feb 4 19:57:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@mirizarry17 @Punisher2892 @JohnLegere @TMobile LOL common tactics !!": [
+    {
+      "screen_name": "mirizarry17",
+    },
+    "screen_name": "Punisher2892",
+    },
+    "screen_name": "JohnLegere",
+    },
+    "screen_name": "TMobile",
+    }
+  ]
+},
+"retweet_count": 0,
+"favourites_count": 2,
+"created_at": "Sat Feb 4 20:00:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@77978e8a1e39413 @JohnLegere @TMobileHelp @sprint hey Robert very happy. Look at the profile picture well, very happy surrounded by family": [
+    {
+      "screen_name": "77978e8a1e39413",
+    },
+    "screen_name": "TMobileHelp",
+    },
+    "screen_name": "JohnLegere",
+    },
+    "screen_name": "sprint",
+    }
+  ]
+},
+"retweet_count": 0,
+"favourites_count": 0,
+"created_at": "Sat Feb 4 20:04:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RogerWCheng @JohnLegere Hi Roger, I manage my own account, but I am more interested in answering customer issues than tweeting meaningless": [
+    {
+      "screen_name": "RogerWCheng",
+    },
+    "screen_name": "JohnLegere",
+    }
+  ]
+},
+"retweet_count": 9,
+"favourites_count": 22,
+"created_at": "Sat Feb 4 20:14:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere @sprint @TMobile hmmm I will just let the facts speak for themselves 293,000 miles of network testing.": [
+    {
+      "screen_name": "sprint",
+    },
+    "screen_name": "JohnLegere",
+    }
+    "screen_name": "TMobile",
+    }
+  ]
+},
+"retweet_count": 47,
+"favourites_count": 62,
+"created_at": "Sat Feb 10 20:39:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere You have to stop reacting like a Tasmanian Devil. No more tweets. I am busy improving my network..you should do the same.": [
+    {
+    "screen_name": "JohnLegere",
+    }
+  ]
+},
+"retweet_count": 73,
+"favourites_count": 118,
+"created_at": "Sat Feb 10 20:58:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@surfprescott @youlookfoolish @sprint @TMobile @JohnLegere very classy": [
+    {
+    "screen_name": "JohnLegere",
+    },
+    "screen_name": "surfprescott",
+    },
+    "screen_name": "youlookfoolish",
+    },
+    "screen_name": "sprint",
+    }
+    "screen_name": "TMobile",
+    }
+  ]
+},
+"retweet_count": 1,
+"favourites_count": 4,
+"created_at": "Sat Feb 13 19:05:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere Hi John it's very simple and transparent $80 a month it includes a Galaxy S6, unlimited talk, text and data, you can upgrade": [
+    {
+    "screen_name": "JohnLegere",
+    }
+  ]
+},
+"retweet_count": 36,
+"favourites_count": 51,
+"created_at": "Sat Mar 26 19:34:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere your phone every single year. What is it so hard to understand ? Simple, clear and transparent.": [
+    {
+    "screen_name": "JohnLegere",
+    }
+  ]
+},
+"retweet_count": 17,
+"favourites_count": 31,
+"created_at": "Sat Mar 26 19:35:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@EssentialDacome @JohnLegere not at Sprint. Unlimited is truly unlimited.": [
+    {
+    "screen_name": "JohnLegere",
+    }
+    "screen_name": "EssentialDacome",
+    }
+  ]
+},
+"retweet_count": 11,
+"favourites_count": 15,
+"created_at": "Sat Mar 26 20:48:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@JohnLegere no more tweets...will let the numbers speak AGAIN. I am sure lots of people love to save 450 a year ": [
+    {
+    "screen_name": "JohnLegere",
+    }
+  ]
+},
+"retweet_count": 183,
+"favourites_count": 167,
+"created_at": "Sat Mar 26 21:14:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@mlg823 @JohnLegere Mathew our new leasing programs let's you have the latest devices every year not 2 years like the rest of the carriers.": [
+    {
+    "screen_name": "JohnLegere",
+    },
+    "screen_name": "mlg823",
+    }
+  ]
+},
+"retweet_count": 3,
+"favourites_count": 4,
+"created_at": "Sat Mar 27 17:23:00 -7000 2015",
+"user": {
+  "follower_count": 161770,
+  "screen_name": "marceloclaure",
+  "time_zone": "Pacific",
+},
+},
 ]
 );
