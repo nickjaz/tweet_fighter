@@ -103,28 +103,28 @@ function calData(){
   var calData = {};
   for (var i=0; i<activeTweets.length; i++){
     var calTimestamp = Math.floor(activeTweets[i].timestamp / 1000);
-    calData[calTimestamp] = Math.floor(Math.random() * 20);
+    calData[calTimestamp] = 1;
   }
   console.log(calData);
   return calData;
 }
 
 var calendarData = {
-  1348477860: 16,
-  1359057960: 2,
-  1361354220: 9,
-  1361367480: 13,
-  1361369160: 0,
-  1361369220: 11,
-  1361370540: 13,
-  1361370720: 9,
+  1348477860: 13,
+  1359057960: 13,
+  1361354220: 11,
+  1361367480: 10,
+  1361369160: 1,
+  1361369220: 2,
+  1361370540: 7,
+  1361370720: 14,
   1361371800: 19,
-  1361374680: 10,
-  1361377140: 6,
-  1361379900: 11,
-  1364996520: 18,
-  1380474300: 16,
-  1391425020: 8,
+  1361374680: 18,
+  1361377140: 13,
+  1361379900: 9,
+  1364996520: 5,
+  1380474300: 19,
+  1391425020: 12
 };
 
 var data = calData();
@@ -141,6 +141,7 @@ function makeHeatMap(){
     start: activeTweets[0].datetimesent,
     range: 4,
     legend: [1, 2, 5, 8, 10],
+    colLimit: 3,
     label: {
       position: 'top'
     },
