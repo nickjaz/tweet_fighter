@@ -13,7 +13,7 @@ var warScoreTwo = document.getElementById('warscore_two');
 var favouritesImg = document.getElementById('favourites_img');
 var reTweetsImg = document.getElementById('retweets_img');
 var warScoreImg = document.getElementById('warscore_img');
-var displayBlock = document.getElementsByTagName('div');
+var displayBox = document.getElementById('display_block');
 var twitOne = '';
 var twitTwo = '';
 var twitOneObj;
@@ -61,13 +61,20 @@ function getWarScore() {
 
 //Encapsulating the render functions
 function renderResults() {
+  console.log('button remove')
   form.removeChild(button);
+  console.log('set display to fight')
   display.setAttribute('class','fight');
+  console.log('set inputTwit One/Two to active')
   inputTwitOne.setAttribute('class', 'active');
   inputTwitTwo.setAttribute('class', 'active');
-  inputTwitOne.disable = true;
-  inputTwitOne.disable = true;
-  displayBlock.setAttribute('class', 'show');
+  console.log('set displayBox to show')
+  // displayBox.removeAttribute('class', 'display_block');
+  displayBox.setAttribute('class', 'show');
+  console.log('is it working?')
+  // inputTwitOne.disable = true;
+  // inputTwitOne.disable = true;
+
 }
 
 //Displays the data
