@@ -794,7 +794,7 @@ var tweets = JSON.stringify([
 "created_at": "Sat Mar 13 18:24:00 -7000 2014",
 "user": {
   "follower_count": 1912435,
-  "screen_name": "RSherman_",
+  "screen_name": "RSherman_25",
   "time_zone": "Pacific",
 },
 },
@@ -960,38 +960,256 @@ var tweets = JSON.stringify([
 "text": "@RSherman_25 let me know when you get 4INTs in one game.": {
   "user_mentions": [
     {
-      "screen_name": "DeAngeloHall23",
+      "screen_name": "RSherman_25",
     }
   ]
 },
-"retweet_count": 2,
-"favourites_count": 3,
-"created_at": "Sat Mar 15 12:00:00 -7000 2014",
+"retweet_count": 3409,
+"favourites_count": 1941,
+"created_at": "Sat Mar 13 18:27:00 -7000 2014",
 "user": {
-  "follower_count": 1912435,
-  "screen_name": "RSherman_25",
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
   "time_zone": "Pacific",
 },
 },
 
 {
-"text": "@RSherman_25 it's easy to say that when you covering Ducks on one side of the field. Ask my old sidekick Nnamdi he out the league already.": {
+"text": "@RSherman_25 no beef at all young fella. I'm a dog you bark at me I'm barking back PERIOD....": {
   "user_mentions": [
     {
       "screen_name": "RSherman_25",
     }
   ]
 },
-"retweet_count": 2,
-"favourites_count": 3,
-"created_at": "Sat Mar 15 12:00:00 -7000 2014",
+"retweet_count": 1593,
+"favourites_count": 1041,
+"created_at": "Sat Mar 13 17:50:00 -7000 2014",
 "user": {
-  "follower_count": 1912435,
-  "screen_name": "RSherman_25",
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
   "time_zone": "Pacific",
 },
 },
 
+{
+"text": "@RSherman_25 just make sure you stay in Seattle cause without that pass rush you are who we thought you were. 5th rd PK no speed good hands": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+  ]
+},
+"retweet_count": 5402,
+"favourites_count": 2854,
+"created_at": "Sat Mar 13 18:20:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
 
+{
+"text": "@RSherman_25 not at all young fella. Check my stats. Then after that go check my BANK account.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+  ]
+},
+"retweet_count": 4896,
+"favourites_count": 2779,
+"created_at": "Sat Mar 13 18:15:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "Congrats @RSherman_25 I'm all about guys getting paid. You said you the best, they paid you like you the best. That's all that matters. $$$": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+  ]
+},
+"retweet_count": 294,
+"favourites_count": 269,
+"created_at": "Sat May 7 11:13:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RSherman_25 man you better start praying now that you can do what I do 10 years in the game.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+  ]
+},
+"retweet_count": 1006,
+"favourites_count": 537,
+"created_at": "Sat Mar 13 18:25:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@ochocinco @RSherman_25 all I'm saying to the kid is I want to see him against top guys all day chad like we use to do.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "ochocinco",
+  }
+  ]
+},
+"retweet_count": 730,
+"favourites_count": 479,
+"created_at": "Sat Mar 13 18:30:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@justin_beachy @RSherman_25 no need to we all saw it.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "justin_beachy",
+  }
+  ]
+},
+"retweet_count": 45,
+"favourites_count": 44,
+"created_at": "Sat Sep 14 19:34:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@ochocinco @RSherman_25 you win some you lose some. But you get that respect for doing it. And you get that money. I want him to get paid": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "ochocinco",
+  }
+  ]
+},
+"retweet_count": 382,
+"favourites_count": 212,
+"created_at": "Sat Mar 13 18:31:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RSherman_25 yeah you right your team is great man. Can't argue that. @Kam_Chancellor @Earl_Thomas they the Best in the biz.": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "Kam_Chancellor",
+    }
+    "screen_name": "Earl_Thomas",
+    }
+  ]
+},
+"retweet_count": 484,
+"favourites_count": 308,
+"created_at": "Sat Mar 13 18:16:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@RSherman_25 The only CB that doesn't get beat, is the one that's sitting the bench. Ask @DeionSanders or @darrellgreen28": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "DeionSanders",
+    }
+    "screen_name": "darrellgreen28",
+    }
+  ]
+},
+"retweet_count": 708,
+"favourites_count": 371,
+"created_at": "Sat Mar 13 16:12:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "I can't lie @RSherman_25 the world wants to see you lock up with guys like @Bigplaycj @DezBryant @ajgreen_18 all game long. I do too!!!!!!": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "Bigplaycj",
+    }
+    "screen_name": "DezBryant",
+    }
+    "screen_name": "ajgreen_18",
+    }
+  ]
+},
+"retweet_count": 946,
+"favourites_count": 477,
+"created_at": "Sat Mar 13 16:09:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
+
+{
+"text": "@AmandaCoppinger lol thanks for the love and support. @RSherman_25 can get that ball. He's a #ballhawk I love it": {
+  "user_mentions": [
+    {
+      "screen_name": "RSherman_25",
+    }
+    "screen_name": "AmandaCoppinger",
+    }
+  ]
+},
+"retweet_count": 0,
+"favourites_count": 3,
+"created_at": "Sat Feb 4 13:23:00 -7000 2014",
+"user": {
+  "follower_count": 103044,
+  "screen_name": "DeAngeloHall23",
+  "time_zone": "Pacific",
+},
+},
 ]
 );
