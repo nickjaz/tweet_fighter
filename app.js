@@ -129,6 +129,7 @@ var calendarData = {
 
 var data = calData();
 
+//http://cal-heatmap.com/
 function makeHeatMap(){
   var cal = new CalHeatMap();
   cal.init({
