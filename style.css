@@ -81,6 +81,7 @@ fieldset {
  position: absolute;
  top: 0;
  left: 0;
+ display: inline-block;
  transition: 350ms;
 }
 
@@ -88,6 +89,7 @@ fieldset {
   position: absolute;
   top: 0;
   right: 0;
+  display: inline-block;
   transition: 350ms;
 }
 
@@ -125,15 +127,17 @@ fieldset {
   margin-top: 30px;
   display: inline-block;
   float: left;
+  transition: 350ms;
 }
 
-.show img {
+.icon {
   width: 30px;
   height: 30px;
   margin: 22px 22px 0 22px;
   border: none;
   display: inline-block;
   float: left;
+  transition: 350ms;
 }
 
 
@@ -148,8 +152,27 @@ fieldset {
   color: #888;
 }
 
-.grandwinner {
+.grand_winner {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: none;
+  border: solid 1px #E2600D;
+  text-shadow: 1px 1px .5px #ddd;
+  color: #E2600D;
+}
 
+.grand_loser {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: none;
+  border: none;
+  opacity: .75;
+  color: #888;
 }
 
 /*.fade_in {

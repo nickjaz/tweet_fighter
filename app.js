@@ -195,5 +195,5 @@ function results(){
   twitTwoObj.setTimestamp();
   setActiveTweets();
   sortActiveTweets();
-  // makeHeatMap();
+  makeHeatMap();
 }
