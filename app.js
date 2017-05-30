@@ -60,17 +60,17 @@ Twit.prototype.sortDates = function(){
 };
 
 Twit.prototype.tweetsByMonth = function(date){
-    var clickedDate = date.toString().split(' ');
-    for (var i=0; i<this.tweets.length; i){
-      var tweetDate = this.tweets[i].datetimesent.toString().split(' ');
-      if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
-        console.log('Do not remove');
-        i++;
-      } else {
-        console.log(i);
-        this.tweets.splice(i, 1);
-      }
+  var clickedDate = date.toString().split(' ');
+  for (var i=0; i<this.tweets.length; i){
+    var tweetDate = this.tweets[i].datetimesent.toString().split(' ');
+    if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
+      console.log('Do not remove');
+      i++;
+    } else {
+      console.log(i);
+      this.tweets.splice(i, 1);
     }
+  }
 };
 
 Twit.prototype.totalsForWar = function(){
