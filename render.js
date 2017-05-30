@@ -4,9 +4,16 @@ var form = document.getElementById('form');
 var button = document.getElementById('toggler');
 var inputTwitOne = document.getElementById('twitOne');
 var inputTwitTwo = document.getElementById('twitTwo');
-var resultsOne = document.getElementById('results_one');
-var resultsTwo = document.getElementById('results_two');
-var resultsKey = document.getElementById('results_key');
+var favouritesOne = document.getElementById('favourites_one');
+var reTweetsOne = document.getElementById('retweets_one');
+var warScoreOne = document.getElementById('warscore_one');
+var favouritesTwo = document.getElementById('favourites_two');
+var reTweetsTwo = document.getElementById('retweets_two');
+var warScoreTwo = document.getElementById('warscore_two');
+var favouritesImg = document.getElementById('favourites_img');
+var reTweetsImg = document.getElementById('retweets_img');
+var warScoreImg = document.getElementById('warscore_img');
+var displayBlock = document.getElementsByTagName('div')
 var twitOne = '';
 var twitTwo = '';
 var twitOneObj;
@@ -53,25 +60,12 @@ function renderResults() {
   inputTwitTwo.setAttribute('class', 'active');
   inputTwitOne.disable = true;
   inputTwitOne.disable = true;
-  resultsOne.setAttribute('class', 'show');
-  resultsTwo.setAttribute('class', 'show');
-  resultsKey.setAttribute('class', 'key_show');
+  displayBlock.setAttribute('class', 'show');
   renderAnimate();
 }
 
 function renderAnimate() {
-  var listOne = document.getElementById('list_one');
-  var listTwo = document.getElementById('list_two');
-  // var listKey = document.getElementById('list_key');
 
-  var favouritesOne = document.createElement('li');
-  var favouritesTwo = document.createElement('li');
-
-  favouritesOne.innerHTML = twitOneObj.favourites;
-  favouritesTwo.innerHTML = twitTwoObj.favourites;
-
-  listOne.appendChild(favouritesOne);
-  listTwo.appendChild(favouritesTwo);
 
   if (twitOneObj.favourites > twitTwoObj.favourites) {
     favouritesOne.setAttribute('class', 'winner');
@@ -81,14 +75,6 @@ function renderAnimate() {
     favouritesTwo.setAttribute('class', 'winner');
   }
 
-  var reTweetsOne = document.createElement('li');
-  var reTweetsTwo = document.createElement('li');
-
-  reTweetsOne.innerHTML = twitOneObj.reTweets;
-  reTweetsTwo.innerHTML = twitTwoObj.reTweets;
-
-  listOne.appendChild(reTweetsOne);
-  listTwo.appendChild(reTweetsTwo);
 
   if (twitOneObj.reTweets > twitTwoObj.reTweets) {
     reTweetsOne.setAttribute('class', 'winner');
