@@ -35,14 +35,6 @@ Twit.prototype.calcTweetScores = function(){
   }
 };
 
-Twit.prototype.calcWarScore = function(){
-  var totWarScore = 0;
-  for (var i=0; i<this.tweets.length; i++){
-    totWarScore = totWarScore + this.tweets[i].tweetWarScore;
-  }
-  this.warScore = Math.floor(totWarScore / this.tweets.length);
-};
-
 Twit.prototype.convertDates = function(){
   for (var i=0; i<this.tweets.length; i++){
     var twitDate = this.tweets[i].created_at;
@@ -65,6 +57,34 @@ Twit.prototype.sortDates = function(){
   this.tweets.sort(function(a,b){
     return new Date(a.datetimesent) - new Date(b.datetimesent);
   });
+};
+
+Twit.prototype.tweetsByMonth = function(date){
+    var clickedDate = date.toString().split(' ');
+    for (var i=0; i<this.tweets.length; i){
+      var tweetDate = this.tweets[i].datetimesent.toString().split(' ');
+      if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
+        console.log('Do not remove');
+        i++;
+      } else {
+        console.log(i);
+        this.tweets.splice(i, 1);
+      }
+    }
+};
+
+Twit.prototype.totalsForWar = function(){
+  var totFavourites = 0;
+  var totReTweets = 0;
+  var totWarScore = 0;
+  for (var i=0; i<this.tweets.length; i++){
+    totFavourites = totFavourites + this.tweets[i].favourites_count;
+    totReTweets = totReTweets + this.tweets[i].retweet_count;
+    totWarScore = totWarScore + this.tweets[i].tweetWarScore;
+  }
+  this.favourites = totFavourites;
+  this.reTweets = totReTweets;
+  this.warScore = totWarScore;
 };
 
 function Twit(screen_name){
@@ -105,29 +125,8 @@ function calData(){
     var calTimestamp = Math.floor(activeTweets[i].timestamp / 1000);
     calData[calTimestamp] = 1;
   }
-  console.log(calData);
   return calData;
 }
-
-var calendarData = {
-  1348477860: 13,
-  1359057960: 13,
-  1361354220: 11,
-  1361367480: 10,
-  1361369160: 1,
-  1361369220: 2,
-  1361370540: 7,
-  1361370720: 14,
-  1361371800: 19,
-  1361374680: 18,
-  1361377140: 13,
-  1361379900: 9,
-  1364996520: 5,
-  1380474300: 19,
-  1391425020: 12
-};
-
-var data = calData();
 
 //http://cal-heatmap.com/
 function makeHeatMap(){
@@ -146,8 +145,16 @@ function makeHeatMap(){
       position: 'top'
     },
     data: calData(),
+    onClick: function(date) {
+      console.log(date);
+      twitOneObj.tweetsByMonth(date);
+      twitTwoObj.tweetsByMonth(date);
+      twitOneObj.totalsForWar();
+      twitTwoObj.totalsForWar();
+      renderResults();
+      return date;
+    },
   });
-  console.log(cal.init.data);
 }
 
 function findWinner(){
@@ -179,14 +186,11 @@ function renderResults(){
 
 function results(){
   twitOneObj.calcTweetScores();
-  twitOneObj.calcWarScore();
   twitTwoObj.calcTweetScores();
-  twitTwoObj.calcWarScore();
   twitOneObj.convertDates();
   twitTwoObj.convertDates();
   twitOneObj.setTimestamp();
   twitTwoObj.setTimestamp();
-  renderResults();
   setActiveTweets();
   sortActiveTweets();
   makeHeatMap();
