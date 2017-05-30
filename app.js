@@ -35,14 +35,6 @@ Twit.prototype.calcTweetScores = function(){
   }
 };
 
-Twit.prototype.calcWarScore = function(){
-  var totWarScore = 0;
-  for (var i=0; i<this.tweets.length; i++){
-    totWarScore = totWarScore + this.tweets[i].tweetWarScore;
-  }
-  this.warScore = Math.floor(totWarScore / this.tweets.length);
-};
-
 Twit.prototype.convertDates = function(){
   for (var i=0; i<this.tweets.length; i++){
     var twitDate = this.tweets[i].created_at;
@@ -65,6 +57,34 @@ Twit.prototype.sortDates = function(){
   this.tweets.sort(function(a,b){
     return new Date(a.datetimesent) - new Date(b.datetimesent);
   });
+};
+
+Twit.prototype.tweetsByMonth = function(date){
+  var clickedDate = date.toString().split(' ');
+  for (var i=0; i<this.tweets.length; i){
+    var tweetDate = this.tweets[i].datetimesent.toString().split(' ');
+    if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
+      console.log('Do not remove');
+      i++;
+    } else {
+      console.log(i);
+      this.tweets.splice(i, 1);
+    }
+  }
+};
+
+Twit.prototype.totalsForWar = function(){
+  var totFavourites = 0;
+  var totReTweets = 0;
+  var totWarScore = 0;
+  for (var i=0; i<this.tweets.length; i++){
+    totFavourites = totFavourites + this.tweets[i].favourites_count;
+    totReTweets = totReTweets + this.tweets[i].retweet_count;
+    totWarScore = totWarScore + this.tweets[i].tweetWarScore;
+  }
+  this.favourites = totFavourites;
+  this.reTweets = totReTweets;
+  this.warScore = totWarScore;
 };
 
 function Twit(screen_name){
@@ -100,19 +120,16 @@ function sortActiveTweets(){
 }
 
 function calData(){
-  var calData = [];
+  var calData = {};
   for (var i=0; i<activeTweets.length; i++){
     var calTimestamp = Math.floor(activeTweets[i].timestamp / 1000);
-    var calDataEl = '"' + calTimestamp + '": ' + Math.floor(Math.random() * 20);
-    calData.push(calDataEl);
+    calData[calTimestamp] = 1;
   }
-  var calReturnData = calData.join();
-  calReturnData = '{' + calReturnData + '}';
-  return calReturnData;
+  return calData;
 }
 
+//http://cal-heatmap.com/
 function makeHeatMap(){
-  var data = calData();
   var cal = new CalHeatMap();
   cal.init({
     itemSelector: '#calendar',
@@ -123,12 +140,21 @@ function makeHeatMap(){
     start: activeTweets[0].datetimesent,
     range: 4,
     legend: [1, 2, 5, 8, 10],
+    colLimit: 3,
     label: {
       position: 'top'
     },
-    data: data,
+    data: calData(),
+    onClick: function(date) {
+      console.log(date);
+      twitOneObj.tweetsByMonth(date);
+      twitTwoObj.tweetsByMonth(date);
+      twitOneObj.totalsForWar();
+      twitTwoObj.totalsForWar();
+      renderResults();
+      return date;
+    },
   });
-  console.log(cal.init.data);
 }
 
 function findWinner(){
@@ -160,14 +186,11 @@ function renderResults(){
 
 function results(){
   twitOneObj.calcTweetScores();
-  twitOneObj.calcWarScore();
   twitTwoObj.calcTweetScores();
-  twitTwoObj.calcWarScore();
   twitOneObj.convertDates();
   twitTwoObj.convertDates();
   twitOneObj.setTimestamp();
   twitTwoObj.setTimestamp();
-  renderResults();
   setActiveTweets();
   sortActiveTweets();
   makeHeatMap();
