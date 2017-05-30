@@ -14,6 +14,7 @@ var favouritesImg = document.getElementById('favourites_img');
 var reTweetsImg = document.getElementById('retweets_img');
 var warScoreImg = document.getElementById('warscore_img');
 var displayBox = document.getElementById('display_block');
+// var icons = document.getElementsByTagName('img');
 var twitOne = '';
 var twitTwo = '';
 var twitOneObj;
@@ -61,27 +62,28 @@ function getWarScore() {
 
 //Encapsulating the render functions
 function renderResults() {
-  console.log('button remove')
   form.removeChild(button);
-  console.log('set display to fight')
-  display.setAttribute('class','fight');
-  console.log('set inputTwit One/Two to active')
-  inputTwitOne.setAttribute('class', 'active');
-  inputTwitTwo.setAttribute('class', 'active');
-  console.log('set displayBox to show')
+  display.setAttribute('class','expand');
+  inputTwitOne.setAttribute('class', 'center');
+  inputTwitTwo.setAttribute('class', 'center');
   // displayBox.removeAttribute('class', 'display_block');
   displayBox.setAttribute('class', 'show');
-  console.log('is it working?')
-  // inputTwitOne.disable = true;
-  // inputTwitOne.disable = true;
-
+  // icons.setAttribute('class', 'show');
+  inputTwitOne.disable = true;
+  inputTwitOne.disable = true;
+  setTimeout(renderFavourites, 500);
+  setTimeout(renderFavouritesWinner, 1500);
+  setTimeout(renderReTweets, 2000);
+  setTimeout(renderReTweetsWinner, 3000);
+  setTimeout(renderWarScore, 3500);
+  setTimeout(renderWareScoreWinner, 4500);
 }
 
 //Displays the data
 function renderFavourites() {
   favouritesOne.innerHTML = twitOneObj.favourites; //replace this with favourites method
   favouritesTwo.innerHTML = twitTwoObj.favourites;
-  favouritesImg.innerHTML = '#';
+  favouritesImg.setAttribute('src', 'https://image.flaticon.com/icons/png/128/148/148836.png');
 }
 
 //Show winner
@@ -98,7 +100,7 @@ function renderFavouritesWinner() {
 function renderReTweets() {
   reTweetsOne.innerHTML = twitOneObj.reTweets;
   reTweetsTwo.innerHTML = twitTwoObj.reTweets;
-  reTweetsImg.innerHTML = '#';
+  reTweetsImg.setAttribute('src', 'https://maxcdn.icons8.com/Share/icon/Messaging//retweet1600.png');
 }
 
 function renderReTweetsWinner(){
@@ -114,7 +116,7 @@ function renderReTweetsWinner(){
 function renderWarScore() {
   warScoreOne.innerHTML = twitOneObj.warScore;
   warScoreTwo.innerHTML = twitTwoObj.warScore;
-  warScoreImg.innerHTML = '#';
+  warScoreImg.setAttribute('src', 'https://d30y9cdsu7xlg0.cloudfront.net/png/147870-200.png');
 }
 
 function renderWareScoreWinner(){

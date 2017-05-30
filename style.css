@@ -58,8 +58,8 @@ section {
   transition: 350ms;
 }
 
-.fight {
-  height: 180px;
+.expand {
+  height: 210px;
 }
 
 input {
@@ -103,9 +103,10 @@ fieldset {
   background: #E2600D;
 }
 
-.active {
+.center {
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 20px;
   text-align: center;
   background: none;
   border: none;
@@ -113,9 +114,28 @@ fieldset {
 
 .show {
   width: 480px;
-  height: 150px;
-  margin-top: 30px;
+  height: 180px;
+  margin-top: 10px;
+  text-align: center;
 }
+
+.show span {
+  width: 202px;
+  height: 30px;
+  margin-top: 30px;
+  display: inline-block;
+  float: left;
+}
+
+.show img {
+  width: 30px;
+  height: 30px;
+  margin: 22px 22px 0 22px;
+  border: none;
+  display: inline-block;
+  float: left;
+}
+
 
 .winner {
   font-weight: bold;
@@ -124,8 +144,12 @@ fieldset {
 }
 
 .loser {
-  opacity: .5;
-  color: #ddd;
+  opacity: .75;
+  color: #888;
+}
+
+.grandwinner {
+
 }
 
 /*.fade_in {
