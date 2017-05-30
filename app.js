@@ -100,19 +100,36 @@ function sortActiveTweets(){
 }
 
 function calData(){
-  var calData = [];
+  var calData = {};
   for (var i=0; i<activeTweets.length; i++){
     var calTimestamp = Math.floor(activeTweets[i].timestamp / 1000);
-    var calDataEl = '"' + calTimestamp + '": ' + Math.floor(Math.random() * 20);
-    calData.push(calDataEl);
+    calData[calTimestamp] = Math.floor(Math.random() * 20);
   }
-  var calReturnData = calData.join();
-  calReturnData = '{' + calReturnData + '}';
-  return calReturnData;
+  console.log(calData);
+  return calData;
 }
 
+var calendarData = {
+  1348477860: 16,
+  1359057960: 2,
+  1361354220: 9,
+  1361367480: 13,
+  1361369160: 0,
+  1361369220: 11,
+  1361370540: 13,
+  1361370720: 9,
+  1361371800: 19,
+  1361374680: 10,
+  1361377140: 6,
+  1361379900: 11,
+  1364996520: 18,
+  1380474300: 16,
+  1391425020: 8,
+};
+
+var data = calData();
+
 function makeHeatMap(){
-  var data = calData();
   var cal = new CalHeatMap();
   cal.init({
     itemSelector: '#calendar',
@@ -126,7 +143,7 @@ function makeHeatMap(){
     label: {
       position: 'top'
     },
-    data: data,
+    data: calData(),
   });
   console.log(cal.init.data);
 }
