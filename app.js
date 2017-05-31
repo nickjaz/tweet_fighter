@@ -22,7 +22,8 @@ document.addEventListener('keydown', (event)) {
 
 
 //global variables
-var formElement = document.getElementById('form');
+
+var form = document.getElementById('form'); //changed the name of this variable to match mine
 var twitOne = '';
 var twitTwo = '';
 var twitOneObj;
@@ -43,10 +44,10 @@ function submitSearch(event){
   assignTwits(twitOne, twitTwo);
   sortTweets(returnedTweets, twitOne, twitTwo);
   results();
-  formElement.reset();
+  // form.reset();
 }
 
-formElement.addEventListener('submit', submitSearch);
+form.addEventListener('submit', submitSearch);
 
 Twit.prototype.calcTweetScores = function(){
   for (var i=0; i<this.tweets.length; i++){
@@ -118,9 +119,23 @@ function Twit(screen_name){
 function sortTweets(returnedTweets, twitOne, twitTwo){
   for (var i=0; i<returnedTweets.length; i++){
     if (returnedTweets[i].user.screen_name.toUpperCase() === twitOne){
-      twitOneObj.tweets.push(returnedTweets[i]);
+      for (var j=0; j<returnedTweets[i].entities.user_mentions.length; j++){
+        if (returnedTweets[i].entities.user_mentions[j].screen_name.toUpperCase() === twitTwo){
+          twitOneObj.tweets.push(returnedTweets[i]);
+          console.log('Assigned');
+        } else {
+          console.log('Not assigned');
+        }
+      }
     } else if (returnedTweets[i].user.screen_name.toUpperCase() === twitTwo){
-      twitTwoObj.tweets.push(returnedTweets[i]);
+      for (var k=0; k<returnedTweets[i].entities.user_mentions.length; k++){
+        if (returnedTweets[i].entities.user_mentions[k].screen_name.toUpperCase() === twitOne){
+          twitTwoObj.tweets.push(returnedTweets[i]);
+          console.log('Assigned');
+        } else {
+          console.log('Not assigned');
+        }
+      }
     } else {
       console.log('Not assigned');
     }
@@ -162,7 +177,7 @@ function makeHeatMap(){
     cellSize: 20,
     start: activeTweets[0].datetimesent,
     range: 4,
-    legend: [1, 2, 5, 8, 10],
+    legend: [1, 2, 4, 8],
     colLimit: 3,
     label: {
       position: 'top'
@@ -174,37 +189,12 @@ function makeHeatMap(){
       twitTwoObj.tweetsByMonth(date);
       twitOneObj.totalsForWar();
       twitTwoObj.totalsForWar();
+      form.removeChild(calendar);
+      form.removeChild(calTitle);
       renderResults();
       return date;
     },
   });
-}
-
-function findWinner(){
-  var fightResults = [];
-  if (twitOneObj.warScore > twitTwoObj.warScore){
-    fightResults = [twitOneObj.screen_name, twitOneObj.warScore, twitTwoObj.screen_name, twitTwoObj.warScore];
-  } else if (twitOneObj.warScore < twitTwoObj.warScore){
-    fightResults = [twitTwoObj.screen_name, twitTwoObj.warScore, twitOneObj.screen_name, twitOneObj.warScore];
-  } else {
-    console.log('findWinner Error');
-  }
-  return fightResults;
-}
-
-function renderResults(){
-  var resultsArray = findWinner();
-  var twitOneBox = document.getElementById('twit-one');
-  var twitTwoBox = document.getElementById('twit-two');
-  if (resultsArray[0] === twitOneObj.screen_name){
-    twitOneBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
-    twitTwoBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
-  } else if (resultsArray[0] === twitTwoObj.screen_name){
-    twitOneBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
-    twitTwoBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
-  } else {
-    console.log('renderResults Error');
-  }
 }
 
 function results(){
@@ -216,5 +206,141 @@ function results(){
   twitTwoObj.setTimestamp();
   setActiveTweets();
   sortActiveTweets();
-  // makeHeatMap();
+  expandAndCenter();
+  setTimeout(makeHeatMap, 350);
+}
+
+//possibly redundant code below
+
+// function findWinner(){
+//   var fightResults = [];
+//   if (twitOneObj.warScore > twitTwoObj.warScore){
+//     fightResults = [twitOneObj.screen_name, twitOneObj.warScore, twitTwoObj.screen_name, twitTwoObj.warScore];
+//   } else if (twitOneObj.warScore < twitTwoObj.warScore){
+//     fightResults = [twitTwoObj.screen_name, twitTwoObj.warScore, twitOneObj.screen_name, twitOneObj.warScore];
+//   } else {
+//     console.log('findWinner Error');
+//   }
+//   return fightResults;
+// }
+
+// function renderResults(){
+//   var resultsArray = findWinner();
+//   var twitOneBox = document.getElementById('twit-one');
+//   var twitTwoBox = document.getElementById('twit-two');
+//   if (resultsArray[0] === twitOneObj.screen_name){
+//     twitOneBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
+//     twitTwoBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
+//   } else if (resultsArray[0] === twitTwoObj.screen_name){
+//     twitOneBox.innerHTML = '<li>Loser!</li><li>War Score: ' + twitOneObj.warScore + '</li>';
+//     twitTwoBox.innerHTML = '<li>Winner!</li><li>War Score: ' + twitTwoObj.warScore + '</li>';
+//   } else {
+//     console.log('renderResults Error');
+//   }
+// }
+
+
+//Start of the render function operations
+//render gloabal variables
+var display = document.getElementById('display');
+//redundant variable below
+// var form = document.getElementById('form');
+var button = document.getElementById('toggler');
+var inputTwitOne = document.getElementById('twitOne');
+var inputTwitTwo = document.getElementById('twitTwo');
+var favouritesOne = document.getElementById('favourites_one');
+var reTweetsOne = document.getElementById('retweets_one');
+var warScoreOne = document.getElementById('warscore_one');
+var favouritesTwo = document.getElementById('favourites_two');
+var reTweetsTwo = document.getElementById('retweets_two');
+var warScoreTwo = document.getElementById('warscore_two');
+var favouritesImg = document.getElementById('favourites_img');
+var reTweetsImg = document.getElementById('retweets_img');
+var warScoreImg = document.getElementById('warscore_img');
+var displayBox = document.getElementById('display_block');
+var calTitle = document.getElementById('cal_title');
+var calendar = document.getElementById('calendar');
+
+//Encapsulating the procedural rendering functions
+function renderResults() {
+  setTimeout(renderFavourites, 500);
+  setTimeout(renderFavouritesWinner, 1500);
+  setTimeout(renderReTweets, 2000);
+  setTimeout(renderReTweetsWinner, 3000);
+  setTimeout(renderWarScore, 3500);
+  setTimeout(renderWareScoreWinner, 4500);
+  setTimeout(renderGrandWinner, 5500);
+}
+
+function expandAndCenter(){
+  form.removeChild(button);
+  display.setAttribute('class','expand');
+  inputTwitOne.setAttribute('class', 'center');
+  inputTwitTwo.setAttribute('class', 'center');
+  displayBox.setAttribute('class', 'show');
+  inputTwitOne.disable = true;
+  inputTwitOne.disable = true;
+}
+
+//Displays the data, all functions below part of the render results func ^ above ^
+function renderFavourites() {
+  favouritesOne.innerHTML = twitOneObj.favourites; //replace this with favourites method
+  favouritesTwo.innerHTML = twitTwoObj.favourites;
+  favouritesImg.setAttribute('class', 'icon');
+  favouritesImg.setAttribute('src', 'https://image.flaticon.com/icons/png/128/148/148836.png'); //will store in img directory fred is building
+}
+
+//Show winner
+function renderFavouritesWinner() {
+  if (twitOneObj.favourites > twitTwoObj.favourites) {
+    favouritesOne.setAttribute('class', 'winner');
+    favouritesTwo.setAttribute('class', 'loser');
+  } else {
+    favouritesOne.setAttribute('class', 'loser');
+    favouritesTwo.setAttribute('class', 'winner');
+  }
+}
+
+function renderReTweets() {
+  reTweetsOne.innerHTML = twitOneObj.reTweets;
+  reTweetsTwo.innerHTML = twitTwoObj.reTweets;
+  reTweetsImg.setAttribute('class', 'icon');
+  reTweetsImg.setAttribute('src', 'https://maxcdn.icons8.com/Share/icon/Messaging//retweet1600.png'); //will store in img directory fred is building
+}
+
+function renderReTweetsWinner(){
+  if (twitOneObj.reTweets > twitTwoObj.reTweets) {
+    reTweetsOne.setAttribute('class', 'winner');
+    reTweetsTwo.setAttribute('class', 'loser');
+  } else {
+    reTweetsOne.setAttribute('class', 'loser');
+    reTweetsTwo.setAttribute('class', 'winner');
+  }
+}
+
+function renderWarScore() {
+  warScoreOne.innerHTML = twitOneObj.warScore;
+  warScoreTwo.innerHTML = twitTwoObj.warScore;
+  warScoreImg.setAttribute('class', 'icon');
+  warScoreImg.setAttribute('src', 'https://d30y9cdsu7xlg0.cloudfront.net/png/147870-200.png'); //will store in img directory fred is building
+}
+
+function renderWareScoreWinner(){
+  if (twitOneObj.warScore > twitTwoObj.warScore) {
+    warScoreOne.setAttribute('class', 'winner');
+    warScoreTwo.setAttribute('class', 'loser');
+  } else {
+    warScoreOne.setAttribute('class', 'loser');
+    warScoreTwo.setAttribute('class', 'winner');
+  }
+}
+
+function renderGrandWinner() {
+  if (twitOneObj.warScore > twitTwoObj.warScore) {
+    inputTwitOne.setAttribute('class', 'grand_winner');
+    inputTwitTwo.setAttribute('class', 'grand_loser');
+  } else {
+    inputTwitOne.setAttribute('class', 'grand_loser');
+    inputTwitTwo.setAttribute('class', 'grand_winner');
+  }
 }
