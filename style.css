@@ -3,16 +3,44 @@
   font-family: 'helvetica';
 }
 
+.diamond_plate {
+  height: auto;
+  width: 760px;
+  position: absolute;
+  margin-left: 235px;
+}
+
+html {
+  /*background-color: #E2600D;*/
+
+}
+
+.bgframe {
+  position: absolute;
+}
+
 body {
+  position: fixed;
+  margin: auto;
   width: 960px;
   height: 1024px;
-  background: linear-gradient(to bottom right, #fff, #ddd);
   font-family: 'helvetica';
+
+}
+
+.fighter {
+  height: 70px;
+  width: 260px;
+  margin-top: 44px;
+  margin-left: 340px;
+  position: fixed;
+  z-index: 100000;
 }
 
 header {
-  width: 960px;
-  height: 60px;
+  margin-left: 130px;
+  width: 980px;
+  height: 107px;
   position: relative;
 }
 
@@ -36,7 +64,7 @@ a {
 
 .spacer {
   height: 6px;
-  width: 480px;
+  width: 500px;
   position: absolute;
   bottom: 0;
   left: 240px;
@@ -45,7 +73,10 @@ a {
 }
 
 main {
-  width: 960px;
+  position: relative;
+  height: 270px;
+  width: 570px;
+  margin-left: 330px;
 }
 
 section {
