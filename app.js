@@ -98,9 +98,23 @@ function Twit(screen_name){
 function sortTweets(returnedTweets, twitOne, twitTwo){
   for (var i=0; i<returnedTweets.length; i++){
     if (returnedTweets[i].user.screen_name.toUpperCase() === twitOne){
-      twitOneObj.tweets.push(returnedTweets[i]);
+      for (var j=0; j<returnedTweets[i].entities.user_mentions.length; j++){
+        if (returnedTweets[i].entities.user_mentions[j].screen_name.toUpperCase() === twitTwo){
+          twitOneObj.tweets.push(returnedTweets[i]);
+          console.log('Assigned');
+        } else {
+          console.log('Not assigned');
+        }
+      }
     } else if (returnedTweets[i].user.screen_name.toUpperCase() === twitTwo){
-      twitTwoObj.tweets.push(returnedTweets[i]);
+      for (var k=0; k<returnedTweets[i].entities.user_mentions.length; k++){
+        if (returnedTweets[i].entities.user_mentions[k].screen_name.toUpperCase() === twitOne){
+          twitTwoObj.tweets.push(returnedTweets[i]);
+          console.log('Assigned');
+        } else {
+          console.log('Not assigned');
+        }
+      }
     } else {
       console.log('Not assigned');
     }
@@ -142,7 +156,7 @@ function makeHeatMap(){
     cellSize: 20,
     start: activeTweets[0].datetimesent,
     range: 4,
-    legend: [1, 2, 5, 8, 10],
+    legend: [1, 2, 4, 8],
     colLimit: 3,
     label: {
       position: 'top'
