@@ -242,6 +242,7 @@ var calendar = document.getElementById('calendar');
 
 //Encapsulating the procedural rendering functions
 function renderResults() {
+  displayBox.setAttribute('class', 'show');
   setTimeout(renderFavourites, 500);
   setTimeout(renderFavouritesWinner, 1500);
   setTimeout(renderReTweets, 2000);
@@ -256,7 +257,6 @@ function expandAndCenter(){
   display.setAttribute('class','expand');
   inputTwitOne.setAttribute('class', 'center');
   inputTwitTwo.setAttribute('class', 'center');
-  displayBox.setAttribute('class', 'show');
   inputTwitOne.disable = true;
   inputTwitOne.disable = true;
 }

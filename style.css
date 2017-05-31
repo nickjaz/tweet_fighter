@@ -6,7 +6,7 @@
 body {
   width: 960px;
   height: 1024px;
-  background: linear-gradient(to bottom right, #fff, #ddd);
+  /*background: linear-gradient(to bottom right, #fff, #ddd);*/
   font-family: 'helvetica';
 }
 
@@ -156,12 +156,11 @@ fieldset {
   width: 30px;
   height: 30px;
   margin: 22px 22px 0 22px;
-  border: none;
-  display: inline-block;
   float: left;
+  display: inline-block;
+  border: none;
   transition: 350ms;
 }
-
 
 .winner {
   font-weight: bold;
