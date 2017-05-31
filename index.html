@@ -14,38 +14,40 @@
 
       <nav><a href="#">history</a></nav>
 
-      <div class="spacer"></div>
+      <p class="spacer"></p>
     </header>
 
     <main>
       <section id="display">
         <form id="form">
           <fieldset>
-            <input id="twitOne" type="text" name="twitOne" placeholder="select tweet fighter">
+            <input id="twitOne" type="text" name="twitOne" placeholder="select tweet fighter" autocomplete="off">
           </fieldset>
 
           <fieldset>
-            <input id="twitTwo" type="text" name="twitTwo" placeholder="select tweet fighter">
+            <input id="twitTwo" type="text" name="twitTwo" placeholder="select tweet fighter" autocomplete="off">
           </fieldset>
 
           <button id="toggler" type="submit">PICK A FIGHT!</button>
 
-          <div>
+          <span id=cal_title>click the month of the beef</span>
+
+          <div id="calendar">
+            <!-- calendar goes here -->
+          </div>
+
+          <div id="display_block">
             <span id="favourites_one"></span>
-            <img id="favourites_img" src="" >
-            <span></span>
-          </div>
+            <img id="favourites_img">
+            <span id="favourites_two"></span>
 
-          <div>
             <span id="retweets_one"></span>
-            <img src="" id="retweets_img">
-            <span></span>
-          </div>
+            <img id="retweets_img">
+            <span id="retweets_two"></span>
 
-          <div>
-            <span></span>
-            <img src="" alt="">
-            <span></span>
+            <span id="warscore_one"></span>
+            <img id="warscore_img">
+            <span id="warscore_two"></span>
           </div>
 
         </form>
@@ -53,7 +55,8 @@
     </main>
 
   </body>
-  <script src="render.js"></script>
-  <!-- <script src="sampletweets.js"></script>
-  <script src="app.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <script src="./cal-heatmap-master/cal-heatmap.min.js"></script>
+  <script src="sampletweets.js"></script>
+  <script src="app.js"></script>
 </html>
