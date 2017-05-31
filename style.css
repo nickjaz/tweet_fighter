@@ -102,6 +102,7 @@ fieldset {
   border: none;
   border-radius: 2px;
   color: #fff;
+  font-size: 10px;
   background: #E2600D;
 }
 
@@ -119,6 +120,27 @@ fieldset {
   height: 180px;
   margin-top: 10px;
   text-align: center;
+}
+
+#cal_title {
+  opacity: 0;
+  transition: 350ms;
+  position: absolute;
+  top: 40px;
+  left: 170px;
+  font-size: 12px;
+  color: #888;
+}
+
+#calendar {
+  position: absolute;
+  top: 48px;
+  left: 106px;
+}
+
+.expand #cal_title {
+  transition: 500ms;
+  opacity: 1;
 }
 
 .show span {
@@ -153,13 +175,12 @@ fieldset {
 }
 
 .grand_winner {
-  width: auto;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
   text-align: center;
   background: none;
-  border: solid 1px #E2600D;
+  border: none;
   text-shadow: 1px 1px .5px #ddd;
   color: #E2600D;
 }

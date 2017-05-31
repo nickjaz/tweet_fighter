@@ -154,6 +154,8 @@ function makeHeatMap(){
       twitTwoObj.tweetsByMonth(date);
       twitOneObj.totalsForWar();
       twitTwoObj.totalsForWar();
+      form.removeChild(calendar);
+      form.removeChild(calTitle);
       renderResults();
       return date;
     },
@@ -169,7 +171,8 @@ function results(){
   twitTwoObj.setTimestamp();
   setActiveTweets();
   sortActiveTweets();
-  makeHeatMap();
+  expandAndCenter();
+  setTimeout(makeHeatMap, 350);
 }
 
 //possibly redundant code below
@@ -220,10 +223,11 @@ var favouritesImg = document.getElementById('favourites_img');
 var reTweetsImg = document.getElementById('retweets_img');
 var warScoreImg = document.getElementById('warscore_img');
 var displayBox = document.getElementById('display_block');
+var calTitle = document.getElementById('cal_title');
+var calendar = document.getElementById('calendar');
 
 //Encapsulating the procedural rendering functions
 function renderResults() {
-  expandAndCenter();
   setTimeout(renderFavourites, 500);
   setTimeout(renderFavouritesWinner, 1500);
   setTimeout(renderReTweets, 2000);
