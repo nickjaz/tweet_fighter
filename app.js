@@ -12,13 +12,19 @@ function checkKonami () {
   console.log(keyPushed);
   evalKonami.push(event.keyCode);
   console.log('key was put in evalKonami array');
-  if (evalKonami == konamiCode) {
+  var lastTen = evalKonami.length - 10;
+  console.log(lastTen);
+  if (lastTen > 0) {
+    evalKonami = evalKonami.splice(lastTen, 10);
+  }
+  if (evalKonami.toString() === konamiCode.toString()) {
     console.log('does it match');
     var sprite = document.createElement('img');
     sprite.src = './imgs/ChunLiThrow_1.gif';
     document.body.appendChild(sprite);
   }
 }
+
 
 //SOMETHING//.addEventListener('onclick',
 
