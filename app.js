@@ -21,6 +21,12 @@ function checkKonami () {
     console.log('does it match');
     var sprite = document.createElement('img');
     sprite.src = './imgs/ChunLiThrow_1.gif';
+    var anotherSprite = document.createElement('img');
+    anotherSprite.src = './imgs/CammyCoat.gif';
+    var moreSprites = document.createElement('img');
+    moreSprites.src = './imgs/CVS2_Sakura_vs_Athena_event.gif';
+    var yetMoreSprites = document.createElement('img');
+    yetMoreSprites.src = './imgs/Dan-sc-kick2.gif';
     document.body.appendChild(sprite);
   }
 }
