@@ -195,10 +195,22 @@ function makeHeatMap(){
       form.removeChild(calendar);
       form.removeChild(calTitle);
       renderResults();
+      renderTweets();
       return date;
     },
   });
 }
+
+
+function renderTweets() {
+  for (var i = 0; i < activeTweets.length; i++) {
+    var divTweet = document.getElementById('allTheTweets');
+    console.log('divTweets?' + divTweet);
+    divTweet.innerHTML = activeTweets[i].text;
+    document.children[i] = divTweet);
+  }
+}
+
 
 function results(){
   twitOneObj.calcTweetScores();
@@ -266,6 +278,7 @@ var calendar = document.getElementById('calendar');
 
 //Encapsulating the procedural rendering functions
 function renderResults() {
+  displayBox.setAttribute('class', 'show');
   setTimeout(renderFavourites, 500);
   setTimeout(renderFavouritesWinner, 1500);
   setTimeout(renderReTweets, 2000);
@@ -277,10 +290,9 @@ function renderResults() {
 
 function expandAndCenter(){
   form.removeChild(button);
-  display.setAttribute('class','expand');
+  // display.setAttribute('class','expand');
   inputTwitOne.setAttribute('class', 'center');
   inputTwitTwo.setAttribute('class', 'center');
-  displayBox.setAttribute('class', 'show');
   inputTwitOne.disable = true;
   inputTwitOne.disable = true;
 }

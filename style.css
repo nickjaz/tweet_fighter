@@ -49,17 +49,12 @@ main {
 }
 
 section {
-  height: 30px;
   width: 480px;
   padding: 30px;
   margin: 80px auto;
   border: solid 3px #E2600D;
   border-radius: 2px;
   transition: 350ms;
-}
-
-.expand {
-  height: 210px;
 }
 
 input {
