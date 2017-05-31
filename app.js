@@ -1,23 +1,26 @@
 'use strict';
 
 //Just trying some stuff out
-var konamiCode = '38, 38, 40, 40, 37, 39, 37, 39, 66, 65'; //ASCII? keycodes for konami thing - has to be a string because keycode is a string method?
+var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]; //ASCII? keycodes for konami thing - has to be a string because keycode is a string method?
 var evalKonami = [];
-var konamiString = isItKonami.join();
 
-document.addEventListener('keydown', (event)) {
+document.addEventListener('keydown', checkKonami);
+
+function checkKonami () {
   var keyPushed = event.keyCode;
   console.log('key is pushed');
   console.log(keyPushed);
   evalKonami.push(event.keyCode);
-  console.log('key was put in isItKonami array');
-  if (konamiString.stringify === konamiCode) {
+  console.log('key was put in evalKonami array');
+  if (evalKonami == konamiCode) {
+    console.log('does it match');
     var sprite = document.createElement('img');
-    sprite.src = "./imgs/ChunLiThrow_1.gif";
+    sprite.src = './imgs/ChunLiThrow_1.gif';
     document.body.appendChild(sprite);
   }
 }
 
+//SOMETHING//.addEventListener('onclick',
 
 
 
