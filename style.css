@@ -5,7 +5,7 @@
 
 body {
   width: 960px;
-  height: 1024px;
+  /*height: 1024px;*/
   background: linear-gradient(to bottom right, #fff, #ddd);
   font-family: 'helvetica';
 }
@@ -45,16 +45,22 @@ a {
 }
 
 main {
-  width: 960px;
-}
-
-section {
+  /*width: 960px;*/
   width: 480px;
   padding: 30px;
   margin: 80px auto;
   border: solid 3px #E2600D;
   border-radius: 2px;
   transition: 350ms;
+}
+
+section {
+  /*width: 480px;
+  padding: 30px;
+  margin: 80px auto;
+  border: solid 3px #E2600D;
+  border-radius: 2px;
+  transition: 350ms;*/
 }
 
 input {
@@ -112,7 +118,7 @@ fieldset {
 
 .show {
   width: 480px;
-  height: 180px;
+  /*height: 180px;*/
   margin-top: 10px;
   text-align: center;
 }
@@ -203,3 +209,10 @@ fieldset {
     opacity: 1;
   }
 }*/
+#allTheTweets span {
+  width: 240px;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

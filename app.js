@@ -100,6 +100,18 @@ Twit.prototype.tweetsByMonth = function(date){
   }
 };
 
+var tweetsCalSort = function (date) {
+  var clickedDate = date.toString().split(' ');
+  for (var i = 0; i < activeTweets.length; i){
+    var tweetDate = activeTweets[i].datetimesent.toString().split(' ');
+    if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
+      i++;
+    } else {
+      activeTweets.splice(i, 1);
+    }
+  }
+};
+
 Twit.prototype.totalsForWar = function(){
   var totFavourites = 0;
   var totReTweets = 0;
@@ -190,12 +202,13 @@ function makeHeatMap(){
       console.log(date);
       twitOneObj.tweetsByMonth(date);
       twitTwoObj.tweetsByMonth(date);
+      tweetsCalSort(date);
       twitOneObj.totalsForWar();
       twitTwoObj.totalsForWar();
       form.removeChild(calendar);
       form.removeChild(calTitle);
-      renderResults();
       renderTweets();
+      renderResults();
       return date;
     },
   });
@@ -204,10 +217,10 @@ function makeHeatMap(){
 
 function renderTweets() {
   for (var i = 0; i < activeTweets.length; i++) {
+    var tweetSpans = document.createElement('span');
+    tweetSpans.innerHTML = activeTweets[i].text;
     var divTweet = document.getElementById('allTheTweets');
-    console.log('divTweets?' + divTweet);
-    divTweet.innerHTML = activeTweets[i].text;
-    document.children[i] = divTweet);
+    divTweet.appendChild(tweetSpans);
   }
 }
 
@@ -337,7 +350,7 @@ function renderWarScore() {
   warScoreOne.innerHTML = twitOneObj.warScore;
   warScoreTwo.innerHTML = twitTwoObj.warScore;
   warScoreImg.setAttribute('class', 'icon');
-  warScoreImg.setAttribute('src', 'https://d30y9cdsu7xlg0.cloudfront.net/png/147870-200.png'); //will store in img directory fred is building
+  warScoreImg.setAttribute('src', './imgs/ChunLiThrow_1'); //will store in img directory fred is building
 }
 
 function renderWareScoreWinner(){
