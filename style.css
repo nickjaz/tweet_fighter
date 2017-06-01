@@ -22,6 +22,13 @@ body {
   font-family: 'helvetica';
 }
 
+.refresh {
+  margin-top: 110px;
+  margin-left: 195px;
+  color: #e2600d;
+  background-color: inherit;
+}
+
 .fighter {
   height: 100px;
   width: 210px;
