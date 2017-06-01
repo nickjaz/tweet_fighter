@@ -3,11 +3,6 @@
   font-family: 'helvetica';
 }
 
-.diamond_plate {
-  width: 760px;
-  position: absolute;
-}
-
 html {
   /*background-color: #E2600D;*/
 }
@@ -17,8 +12,17 @@ html {
 }
 
 body {
+  background-size: cover;
   margin: 0 auto;
   width: 960px;
+  font-family: 'helvetica';
+}
+
+.refresh {
+  margin-top: 110px;
+  margin-left: 520px;
+  color: #e2600d;
+  background: rgba(17, 17, 17, .5);
 }
 
 .fighter {
@@ -87,11 +91,11 @@ form {
 }
 
 #twitOne {
- position: absolute;
- top: 0;
- left: 0;
- display: inline-block;
- transition: 350ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  transition: 350ms;
 }
 
 #twitTwo {
@@ -185,6 +189,24 @@ form {
   transition: 350ms;
 }
 
+.legend {
+  width: 50px !important;
+  height: 20px !important;
+  display: inline-block;
+  position: absolute;
+  right: 245px;
+  font-size: 10px;
+  color: #ddd !important;
+}
+
+#retweets_legend {
+  top: 121px;
+}
+
+#warscore_legend{
+  top: 182px;
+}
+
 .winner {
   font-weight: bold;
   color: #E2600D !important;
@@ -217,16 +239,3 @@ form {
   opacity: .75;
   color: #ddd;
 }
-
-/*.fade_in {
-  animation: fadein 350ms;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}*/
