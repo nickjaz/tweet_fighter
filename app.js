@@ -323,3 +323,27 @@ function renderGrandWinner() {
     inputTwitTwo.setAttribute('class', 'grand_winner');
   }
 }
+
+var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+var evalKonami = [];
+
+document.addEventListener('keydown', checkKonami);
+
+function checkKonami () {
+  var keyPushed = event.keyCode;
+  console.log('key is pushed');
+  console.log(keyPushed);
+  evalKonami.push(event.keyCode);
+  console.log('key was put in evalKonami array');
+  var lastTen = evalKonami.length - 10;
+  console.log(lastTen);
+  if (lastTen > 0) {
+    evalKonami = evalKonami.splice(lastTen, 10);
+  }
+  if (evalKonami.toString() === konamiCode.toString()) {
+    console.log('does it match');
+    var sprite = document.createElement('img');
+    sprite.src = './imgs/ChunLiThrow_1.gif';
+    document.body.appendChild(sprite);
+  }
+}
