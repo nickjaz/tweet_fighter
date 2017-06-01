@@ -4,15 +4,12 @@
 }
 
 .diamond_plate {
-  height: auto;
   width: 760px;
   position: absolute;
-  margin-left: 235px;
 }
 
 html {
   /*background-color: #E2600D;*/
-
 }
 
 .bgframe {
@@ -20,25 +17,22 @@ html {
 }
 
 body {
-  position: fixed;
-  margin: auto;
+  margin: 0 auto;
   width: 960px;
-  height: 1024px;
   font-family: 'helvetica';
-
 }
 
 .fighter {
   height: 100px;
-  width: 260px;
+  width: 210px;
   margin-top: 20px;
-  margin-left: 340px;
-  position: fixed;
+  margin-left: 230px;
+  position: absolute;
   z-index: 100000;
 }
 
 header {
-  margin-left: 130px;
+  margin: 0 auto;
   width: 980px;
   height: 107px;
   position: relative;
@@ -52,16 +46,6 @@ h1 {
   font-size: 20px;
 }
 
-a {
-  font-size: 14px;
-  font-style: none;
-  text-decoration: none;
-  color: #E2600D;;
-  position: absolute;
-  bottom: 8px;
-  right: 250px;
-}
-
 .spacer {
   height: 6px;
   width: 500px;
@@ -73,10 +57,7 @@ a {
 }
 
 main {
-  position: relative;
-  height: 270px;
-  width: 570px;
-  margin-left: 330px;
+  margin: 0 auto;
 }
 
 section {
@@ -84,6 +65,8 @@ section {
   width: 480px;
   padding: 30px;
   margin: 80px auto;
+  position: relative;
+  background: rgba(17, 17, 17, .5);
   border: solid 3px #E2600D;
   border-radius: 2px;
   transition: 350ms;
@@ -102,10 +85,6 @@ input {
 
 form {
   position: relative;
-}
-
-fieldset {
-  display: inline-block;
 }
 
 #twitOne {
@@ -142,6 +121,7 @@ fieldset {
   margin-right: 10px;
   font-size: 20px;
   text-align: center;
+  color: #fff;
   background: none;
   border: none;
 }
@@ -149,8 +129,12 @@ fieldset {
 .show {
   width: 480px;
   height: 180px;
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
+}
+
+#tweet_cal {
+  position: relative;
 }
 
 #cal_title {
@@ -160,7 +144,7 @@ fieldset {
   top: 40px;
   left: 170px;
   font-size: 12px;
-  color: #888;
+  color: #fff;
 }
 
 #calendar {
@@ -174,10 +158,19 @@ fieldset {
   opacity: 1;
 }
 
+.expand #cal_title span {
+  width: 220px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
+  display: inline-block;
+}
+
 .show span {
   width: 202px;
   height: 30px;
   margin-top: 30px;
+  color: #fff;
   display: inline-block;
   float: left;
   transition: 350ms;
@@ -193,16 +186,15 @@ fieldset {
   transition: 350ms;
 }
 
-
 .winner {
   font-weight: bold;
-  color: #111;
-  text-shadow: 1px 1px .5px #ddd;
+  color: #E2600D !important;
+  text-shadow: 1px 1px .5px #888;
 }
 
 .loser {
   opacity: .75;
-  color: #888;
+  color: #ddd;
 }
 
 .grand_winner {
@@ -212,7 +204,7 @@ fieldset {
   text-align: center;
   background: none;
   border: none;
-  text-shadow: 1px 1px .5px #ddd;
+  text-shadow: 1px 1px .5px #888;
   color: #E2600D;
 }
 
@@ -224,7 +216,7 @@ fieldset {
   background: none;
   border: none;
   opacity: .75;
-  color: #888;
+  color: #ddd;
 }
 
 /*.fade_in {
