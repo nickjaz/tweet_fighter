@@ -221,8 +221,5 @@ fieldset {
   border-radius: 6px;
   background-color: rgba(125, 222, 255, 0.5);
   padding: 1px;
-}
-
-#allTheTweets[text.entities] {
-  color: blue;
+  line-height: 1.4em;
 }
