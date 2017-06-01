@@ -180,10 +180,29 @@ form {
   width: 30px;
   height: 30px;
   margin: 22px 22px 0 22px;
+  position: relative;
   border: none;
   display: inline-block;
   float: left;
   transition: 350ms;
+}
+
+.legend {
+  width: 50px !important;
+  height: 20px !important;
+  display: inline-block;
+  position: absolute;
+  right: 245px;
+  font-size: 10px;
+  color: #ddd !important;
+}
+
+#retweets_legend {
+  top: 121px;
+}
+
+#warscore_legend{
+  top: 182px;
 }
 
 .winner {
