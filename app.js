@@ -76,6 +76,18 @@ Twit.prototype.tweetsByMonth = function(date){
   }
 };
 
+var tweetsCalSort = function (date) {
+  var clickedDate = date.toString().split(' ');
+  for (var i = 0; i < activeTweets.length; i){
+    var tweetDate = activeTweets[i].datetimesent.toString().split(' ');
+    if (clickedDate[1] === tweetDate[1] && clickedDate[3] === tweetDate[3]){
+      i++;
+    } else {
+      activeTweets.splice(i, 1);
+    }
+  }
+};
+
 Twit.prototype.totalsForWar = function(){
   var totFavourites = 0;
   var totReTweets = 0;
@@ -136,6 +148,26 @@ function sortActiveTweets(){
   });
 }
 
+//Konami code
+var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+var evalKonami = [];
+
+document.addEventListener('keydown', checkKonami);
+
+function checkKonami () {
+  var keyPushed = event.keyCode;
+  console.log('key is pushed');
+  console.log(keyPushed);
+  evalKonami.push(event.keyCode);
+  console.log('key was put in evalKonami array');
+  if (evalKonami == konamiCode) {
+    console.log('does it match');
+    var sprite = document.createElement('img');
+    sprite.src = './imgs/ChunLiThrow_1.gif';
+    document.body.appendChild(sprite);
+  }
+}
+
 function calData(){
   var calData = {};
   for (var i=0; i<activeTweets.length; i++){
@@ -166,6 +198,7 @@ function makeHeatMap(){
       console.log(date);
       twitOneObj.tweetsByMonth(date);
       twitTwoObj.tweetsByMonth(date);
+      tweetsCalSort(date);
       twitOneObj.totalsForWar();
       twitTwoObj.totalsForWar();
       tweetCal.removeChild(calendar);
@@ -175,6 +208,17 @@ function makeHeatMap(){
     },
   });
 }
+
+
+function renderTweets() {
+  for (var i = 0; i < activeTweets.length; i++) {
+    var tweetSpans = document.createElement('span');
+    tweetSpans.innerHTML = activeTweets[i].text;
+    var divTweet = document.getElementById('allTheTweets');
+    divTweet.appendChild(tweetSpans);
+  }
+}
+
 
 function results(){
   twitOneObj.calcTweetScores();
@@ -213,6 +257,7 @@ var calendar = document.getElementById('calendar');
 
 //Encapsulating the procedural rendering functions
 function renderResults() {
+  displayBox.setAttribute('class', 'show');
   setTimeout(renderFavourites, 500);
   setTimeout(renderFavouritesWinner, 1500);
   setTimeout(renderReTweets, 2000);
@@ -224,10 +269,9 @@ function renderResults() {
 
 function expandAndCenter(){
   form.removeChild(button);
-  display.setAttribute('class','expand');
+  // display.setAttribute('class','expand');
   inputTwitOne.setAttribute('class', 'center');
   inputTwitTwo.setAttribute('class', 'center');
-  displayBox.setAttribute('class', 'show');
   inputTwitOne.disable = true;
   inputTwitOne.disable = true;
 }
