@@ -24,9 +24,9 @@ body {
 
 .refresh {
   margin-top: 110px;
-  margin-left: 195px;
+  margin-left: 385px;
   color: #e2600d;
-  background-color: inherit;
+background: rgba(17, 17, 17, .5);
 }
 
 .fighter {
