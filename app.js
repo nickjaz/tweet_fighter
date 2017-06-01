@@ -206,6 +206,9 @@ var warScoreTwo = document.getElementById('warscore_two');
 var favouritesImg = document.getElementById('favourites_img');
 var reTweetsImg = document.getElementById('retweets_img');
 var warScoreImg = document.getElementById('warscore_img');
+var favLegend = document.getElementById('favourites_legend');
+var reTweetsLegend = document.getElementById('retweets_legend');
+var warLegend = document.getElementById('warscore_legend');
 var displayBox = document.getElementById('display_block');
 var tweetCal = document.getElementById('tweet_cal');
 var calTitle = document.getElementById('cal_title');
@@ -238,6 +241,8 @@ function renderFavourites() {
   favouritesTwo.innerHTML = twitTwoObj.favourites;
   favouritesImg.setAttribute('class', 'icon');
   favouritesImg.setAttribute('src', 'TFAssets/favourites.png');
+  favLegend.setAttribute('class', 'legend');
+  favLegend.innerHTML = 'favourites';
 }
 
 //Show winner
@@ -255,9 +260,10 @@ function renderReTweets() {
   reTweetsOne.innerHTML = twitOneObj.reTweets;
   reTweetsTwo.innerHTML = twitTwoObj.reTweets;
   reTweetsImg.setAttribute('class', 'icon');
-  reTweetsImg.setAttribute('src', 'TFAssets/retweet.png'); //will store in img directory fred is building
+  reTweetsImg.setAttribute('src', 'TFAssets/retweet.png');
+  reTweetsLegend.setAttribute('class', 'legend');
+  reTweetsLegend.innerHTML = 'retweet';
 }
-
 function renderReTweetsWinner(){
   if (twitOneObj.reTweets > twitTwoObj.reTweets) {
     reTweetsOne.setAttribute('class', 'winner');
@@ -272,7 +278,9 @@ function renderWarScore() {
   warScoreOne.innerHTML = twitOneObj.warScore;
   warScoreTwo.innerHTML = twitTwoObj.warScore;
   warScoreImg.setAttribute('class', 'icon');
-  warScoreImg.setAttribute('src', 'TFAssets/warscore.png'); //will store in img directory fred is building
+  warScoreImg.setAttribute('src', 'TFAssets/warscore.png');
+  warLegend.setAttribute('class', 'legend');
+  warLegend.innerHTML = 'warscore';
 }
 
 function renderWareScoreWinner(){
