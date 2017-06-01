@@ -13,16 +13,7 @@ html {
 
 body {
   background-size: cover;
-  margin: 0 auto;
-  width: 960px;
   font-family: 'helvetica';
-}
-
-.refresh {
-  margin-top: 110px;
-  margin-left: 520px;
-  color: #e2600d;
-  background: rgba(17, 17, 17, .5);
 }
 
 .fighter {
