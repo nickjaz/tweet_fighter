@@ -17,16 +17,17 @@ html {
 }
 
 body {
+  background-size: cover;
   margin: 0 auto;
-  width: 960px;
+  /*width: 960px;*/
   font-family: 'helvetica';
 }
 
 .refresh {
   margin-top: 110px;
-  margin-left: 385px;
+  margin-left: 520px;
   color: #e2600d;
-background: rgba(17, 17, 17, .5);
+  background: rgba(17, 17, 17, .5);
 }
 
 .fighter {
@@ -95,11 +96,11 @@ form {
 }
 
 #twitOne {
- position: absolute;
- top: 0;
- left: 0;
- display: inline-block;
- transition: 350ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  transition: 350ms;
 }
 
 #twitTwo {
@@ -246,14 +247,14 @@ form {
 }
 
 /*.fade_in {
-  animation: fadein 350ms;
+animation: fadein 350ms;
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
 }*/
