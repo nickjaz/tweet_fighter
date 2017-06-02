@@ -339,6 +339,5 @@ function checkKonami () {
     sprite.id = 'carpunch';
     form.appendChild(sprite);
     sprite = document.getElementById('facekick');
-    sprite.class = 'spinner';
   }
 }

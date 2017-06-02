@@ -233,24 +233,34 @@ form {
 
 #chunli {
   display: inline;
-  float: left;
-  z-index: 10000000;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #knockout {
-  float: left;
   display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-left: 200px;
   max-height: 100px;
 }
 
 #facekick {
+  display: inline;
+  position: absolute;
+  left: 10px;
+  top: 200px;
   max-height: 150px;
-  clear: both;
   transform: rotate(25deg);
 }
 
 #carpunch {
+  display: inline;
+  position: absolute;
+  right: 20px;
+  top: 350px;
   max-height: 150px;
   transform: rotate(-30deg);
 }
