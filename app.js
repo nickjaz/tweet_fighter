@@ -320,9 +320,24 @@ function checkKonami () {
     evalKonami = evalKonami.splice(lastTen, 10);
   }
   if (evalKonami.toString() === konamiCode.toString()) {
+    var form = document.getElementById('form');
     console.log('does it match');
     var sprite = document.createElement('img');
     sprite.src = './imgs/ChunLiThrow_1.gif';
-    document.body.appendChild(sprite);
+    sprite.id = 'chunli';
+    form.appendChild(sprite);
+    sprite = document.createElement('img');
+    sprite.src = './imgs/knockout.gif';
+    sprite.id = 'knockout';
+    form.appendChild(sprite);
+    sprite = document.createElement('img');
+    sprite.src = './imgs/facekick.gif';
+    sprite.id = 'facekick';
+    form.appendChild(sprite);
+    sprite = document.createElement('img');
+    sprite.src = './imgs/carpunch.gif';
+    sprite.id = 'carpunch';
+    form.appendChild(sprite);
+    sprite = document.getElementById('facekick');
   }
 }
