@@ -234,16 +234,15 @@ form {
 #chunli {
   display: inline;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -100px;
+  left: 40px;
 }
 
 #knockout {
   display: inline;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-left: 200px;
+  top: -100px;
+  right: 55px;
   max-height: 100px;
 }
 
@@ -251,7 +250,7 @@ form {
   display: inline;
   position: absolute;
   left: 10px;
-  top: 200px;
+  top: 100px;
   max-height: 150px;
   transform: rotate(25deg);
 }
@@ -260,7 +259,7 @@ form {
   display: inline;
   position: absolute;
   right: 20px;
-  top: 350px;
+  top: 225px;
   max-height: 150px;
   transform: rotate(-30deg);
 }
