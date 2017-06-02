@@ -230,3 +230,27 @@ form {
   opacity: .75;
   color: #ddd;
 }
+
+#chunli {
+  display: inline;
+  float: left;
+  z-index: 10000000;
+}
+
+#knockout {
+  float: left;
+  display: inline;
+  margin-left: 200px;
+  max-height: 100px;
+}
+
+#facekick {
+  max-height: 150px;
+  clear: both;
+  transform: rotate(25deg);
+}
+
+#carpunch {
+  max-height: 150px;
+  transform: rotate(-30deg);
+}
