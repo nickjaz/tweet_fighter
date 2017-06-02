@@ -201,7 +201,7 @@ form {
 .winner {
   font-weight: bold;
   color: #E2600D !important;
-  text-shadow: 1px 1px .5px #888;
+  text-shadow: 1px 1px .5px #444;
 }
 
 .loser {
@@ -216,7 +216,7 @@ form {
   text-align: center;
   background: none;
   border: none;
-  text-shadow: 1px 1px .5px #888;
+  text-shadow: 1px 1px .5px #444;
   color: #E2600D;
 }
 
