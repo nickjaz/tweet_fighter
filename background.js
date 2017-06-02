@@ -3,7 +3,7 @@ function ChangeIt()
 {
   var num = Math.ceil( Math.random() * totalCount );
   //grabs random image from source directory as opposed to an array
-  document.body.background = './TFassets/'+num+'.jpg';
+  document.body.background = './TFAssets/'+num+'.jpg';
 // Background norepeat
   document.body.style.backgroundRepeat = 'no-repeat';
   //align image
